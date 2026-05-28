@@ -1,4 +1,4 @@
-# Release Manifest — PCNN (CMLTRPCNNv7.7)
+# Release Manifest — PCNN 
 
 Generated for Nature Communications open-source deposit.
 

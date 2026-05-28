@@ -6,7 +6,7 @@ Code release accompanying the manuscript: **"Physics-Constrained Neural Network 
 
 ## Overview
 
-CMLTRPCNNv7.7 (PCNN) predicts the dielectric constant (εᵣ) of ABO₃ perovskite ceramics by decomposing every prediction into four physically interpretable contributions:
+CMLTRPCNN predicts the dielectric constant (εᵣ) of ABO₃ perovskite ceramics by decomposing every prediction into four physically interpretable contributions:
 
 ```
 εᵣ = εᵣ_CM  +  δ_LST (≥0)  +  δ_tilt (≤0)  +  δ_res (confidence-gated)
