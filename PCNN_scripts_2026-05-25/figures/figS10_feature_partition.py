@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 import json, os
 
-PIML = "/Users/anbu/Desktop/PIML/piml_ceramic"
+PIML = "."
 OUT  = "./figures_output/all_figures/supp"
 os.makedirs(OUT, exist_ok=True)
 

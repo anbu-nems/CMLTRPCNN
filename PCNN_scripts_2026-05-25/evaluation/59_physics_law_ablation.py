@@ -35,7 +35,7 @@ DEVICE   = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 ROOT     = os.path.join(os.path.dirname(__file__), "..")
 PROC_DIR = os.path.join(ROOT, "data", "processed")
 RES_DIR  = os.path.join(ROOT, "results")
-COMP_DIR = "/Users/anbu/Desktop/NC figures/comparison"
+COMP_DIR = "./figures_output/comparison"
 
 from src.models.psrnn_mdpinn import CMLTRPCNNv71
 

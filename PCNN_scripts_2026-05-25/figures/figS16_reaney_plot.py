@@ -22,7 +22,7 @@ import os
 OUT_DIR = "./figures_output/all_figures/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
 EXTRACT = "./extracted_data"
-PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
+PIML    = "."
 
 plt.rcParams.update({
     "font.family": "sans-serif",

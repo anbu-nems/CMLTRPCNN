@@ -24,7 +24,7 @@ import os
 
 OUT_FIG = "./figures_output/all_figures/supp"
 OUT_CSV = "./extracted_data"
-PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
+PIML    = "."
 os.makedirs(OUT_FIG, exist_ok=True)
 os.makedirs(OUT_CSV, exist_ok=True)
 

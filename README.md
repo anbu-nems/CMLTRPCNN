@@ -215,7 +215,7 @@ If you use this code or data, please cite:
 
 ```
 [Authors] (2026) "Physics-Constrained Neural Network for Dielectric Constant
-Prediction of ABO₃ Microwave Dielectric Ceramics", Nature Communications.
+Prediction of ABO_{3} Microwave Dielectric Ceramics" (manuscript submitted; journal information to be added on acceptance).
 ```
 
 ---

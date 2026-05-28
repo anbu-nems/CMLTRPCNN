@@ -1,7 +1,7 @@
 """
 Figure S1 — Conformal prediction
 Publication-quality figure for Nature Communications supplementary.
-Run from: /Users/anbu/Desktop/PIML/piml_ceramic
+Run from: .
 """
 import numpy as np
 import pandas as pd

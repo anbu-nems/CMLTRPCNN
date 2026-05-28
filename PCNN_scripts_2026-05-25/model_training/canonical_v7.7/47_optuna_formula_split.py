@@ -13,7 +13,7 @@ Best HP → results/47_optuna_frm_best.json
 Study DB → results/47_optuna_frm.db  (resume-able)
 
 Usage:
-    cd /Users/anbu/Desktop/PIML/piml_ceramic
+    cd .
     python scripts/47_optuna_formula_split.py
     python scripts/47_optuna_formula_split.py --trials 80
 """

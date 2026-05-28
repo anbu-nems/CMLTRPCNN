@@ -1,6 +1,6 @@
 # Release Manifest — PCNN 
 
-Generated for Nature Communications open-source deposit.
+Generated for the public open-source deposit (manuscript submitted; journal information to be added on acceptance).
 
 ## What's in this release
 

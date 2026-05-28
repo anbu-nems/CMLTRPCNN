@@ -18,7 +18,7 @@ import matplotlib.patches as mpatches
 import numpy as np
 import pandas as pd
 import json, os, re
-PIML = '/Users/anbu/Desktop/PIML/piml_ceramic'
+PIML = '.'
 OUT = './figures_output/all_figures/supp'
 EXTRACT = './extracted_data'
 os.makedirs(OUT, exist_ok=True)

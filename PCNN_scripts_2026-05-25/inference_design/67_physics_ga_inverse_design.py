@@ -33,8 +33,8 @@ import torch
 # ── Paths ─────────────────────────────────────────────────────────────────────
 _HERE  = os.path.dirname(os.path.abspath(__file__))
 _ROOT  = os.path.dirname(_HERE)
-_APP   = "/Users/anbu/Desktop/NC figures/explorer_app"
-_MCODE = "/Users/anbu/Desktop/NC figures/model_code"
+_APP   = "./figures_output/explorer_app"
+_MCODE = "./figures_output/model_code"
 sys.path.insert(0, _APP)
 sys.path.insert(0, _MCODE)
 
