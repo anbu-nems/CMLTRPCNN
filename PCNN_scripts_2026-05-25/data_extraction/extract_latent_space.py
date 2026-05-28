@@ -23,9 +23,9 @@ from sklearn.decomposition import PCA
 from model_CMLTRPCNNv77 import CMLTRPCNNv71
 from train_final_model import HP, DEVICE, PROC_DIR
 
-OUT_DIR    = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data"
+OUT_DIR    = "./extracted_data"
 os.makedirs(OUT_DIR, exist_ok=True)
-PIML       = "/Users/anbu/Desktop/PIML/piml_ceramic"
+PIML       = "."
 MODEL_PATH = f"{PIML}/models/cmltrv77_final.pt"
 SCAL_PATH  = f"{PIML}/models/cmltrv77_scalers.pkl"
 

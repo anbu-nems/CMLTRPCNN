@@ -22,7 +22,7 @@ import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.neighbors import KernelDensity
 
-ROOT = "/Users/anbu/Desktop/PIML/piml_ceramic"
+ROOT = "."
 Q90 = 14.38
 SIGMA_CONF_THRESHOLD = 0.35   # real AD layer-1 threshold (script 49)
 KDE_PERCENTILE, PCA_COMPONENTS = 5, 10

@@ -1,7 +1,7 @@
 """
 Figure S4 — Per-fold CV detail
 Publication-quality figure for Nature Communications supplementary.
-Run from: /Users/anbu/Desktop/PIML/piml_ceramic
+Run from: .
 """
 import json
 import numpy as np
