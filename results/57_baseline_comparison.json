@@ -1,0 +1,97 @@
+{
+  "comparison": "Fair baseline comparison vs CMLTRPCNNv7.7",
+  "protocol": "Strat-GSS 5-fold CV + held-out set (n=116)",
+  "feature_set": "feature_matrix_v7 \u2014 all 103 features for baselines",
+  "models": {
+    "CM-only (physics anchor)": {
+      "strat_gss_r2_mean": -0.862,
+      "strat_gss_r2_std": 0.3549,
+      "strat_gss_r2_per_fold": [
+        -0.2317,
+        -0.956,
+        -0.7573,
+        -1.243,
+        -1.1218
+      ],
+      "holdout_r2": -0.4915,
+      "holdout_mae": 26.594
+    },
+    "Ridge Regression": {
+      "strat_gss_r2_mean": 0.7205,
+      "strat_gss_r2_std": 0.1895,
+      "strat_gss_r2_per_fold": [
+        0.8484,
+        0.367,
+        0.9047,
+        0.6991,
+        0.7832
+      ],
+      "holdout_r2": 0.8665,
+      "holdout_mae": 9.19
+    },
+    "Random Forest": {
+      "strat_gss_r2_mean": 0.9005,
+      "strat_gss_r2_std": 0.0572,
+      "strat_gss_r2_per_fold": [
+        0.8244,
+        0.8547,
+        0.9594,
+        0.971,
+        0.8932
+      ],
+      "holdout_r2": 0.8943,
+      "holdout_mae": 7.874
+    },
+    "XGBoost": {
+      "strat_gss_r2_mean": 0.9275,
+      "strat_gss_r2_std": 0.0526,
+      "strat_gss_r2_per_fold": [
+        0.8419,
+        0.9002,
+        0.9766,
+        0.9852,
+        0.9335
+      ],
+      "holdout_r2": 0.8785,
+      "holdout_mae": 8.081
+    },
+    "CatBoost": {
+      "strat_gss_r2_mean": 0.9298,
+      "strat_gss_r2_std": 0.0414,
+      "strat_gss_r2_per_fold": [
+        0.8697,
+        0.9164,
+        0.9681,
+        0.984,
+        0.9109
+      ],
+      "holdout_r2": 0.9097,
+      "holdout_mae": 7.038
+    },
+    "BPNN / MLP": {
+      "strat_gss_r2_mean": 0.9144,
+      "strat_gss_r2_std": 0.0929,
+      "strat_gss_r2_per_fold": [
+        0.9761,
+        0.7324,
+        0.964,
+        0.9752,
+        0.9244
+      ],
+      "holdout_r2": 0.9569,
+      "holdout_mae": 5.402
+    },
+    "PIRNN (phys. features only)": {
+      "strat_gss_r2_mean": 0.8634,
+      "strat_gss_r2_std": 0.1814,
+      "holdout_r2": 0.9374,
+      "holdout_mae": 6.005
+    },
+    "PCNN / CMLTRPCNNv7.7 (ours)": {
+      "strat_gss_r2_mean": 0.8928,
+      "strat_gss_r2_std": 0.0435,
+      "holdout_r2": 0.9412,
+      "holdout_mae": 5.773
+    }
+  }
+}

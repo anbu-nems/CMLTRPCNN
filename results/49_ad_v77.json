@@ -1,0 +1,113 @@
+{
+  "model": "CMLTRPCNNv77",
+  "ad_concept": "Dual: Layer1=physics-mechanism gate (sigma_conf), Layer2=PCA+KDE density",
+  "novelty": "Primary reliability from physics (CM quality, GII, phase proximity); KDE hardens against compositional OOD",
+  "layer1_physics_gate": {
+    "signal": "sigma_conf = sigmoid(beta_0 + beta_1*cm_approx + beta_2*gii + beta_3*phase_tr)",
+    "beta": [
+      -2.0,
+      3.0,
+      2.0,
+      2.0
+    ],
+    "threshold": 0.35,
+    "n_physics_reliable": 735,
+    "pct_physics_reliable": 56.4,
+    "mean_sigma_vca": 0.923,
+    "mean_sigma_exact_cm": 0.321
+  },
+  "layer2_kde": {
+    "pca_components": 10,
+    "pca_variance": 0.7049,
+    "kde_bandwidth": 1.0,
+    "threshold_percentile": 5,
+    "threshold_log_density": -16.0245,
+    "pct_train_in_domain": 94.9,
+    "pct_calib_in_domain": 39.7
+  },
+  "combined_ad": {
+    "pct_total_in_ad": 52.8,
+    "pct_train_in_ad": 55.3,
+    "pct_calib_in_ad": 26.7
+  },
+  "validation_calibration": {
+    "n_calib": 116,
+    "r2_overall": 0.9413,
+    "r2_layer1_in": 0.9673,
+    "r2_layer1_out": 0.5537,
+    "r2_layer2_in": 0.9544,
+    "r2_layer2_out": 0.8704,
+    "r2_combined_in": 0.9331,
+    "r2_combined_out": 0.8581,
+    "mae_combined_in": 5.642,
+    "mae_combined_out": 5.814
+  },
+  "asite_ad": {
+    "Pb": {
+      "n": 86,
+      "pct_combined_in_ad": 74.4,
+      "pct_layer1_physics": 81.4,
+      "pct_layer2_kde": 89.5,
+      "mean_sigma_conf": 0.288
+    },
+    "Ba": {
+      "n": 436,
+      "pct_combined_in_ad": 58.3,
+      "pct_layer1_physics": 59.6,
+      "pct_layer2_kde": 93.6,
+      "mean_sigma_conf": 0.491
+    },
+    "Ca": {
+      "n": 421,
+      "pct_combined_in_ad": 52.7,
+      "pct_layer1_physics": 53.9,
+      "pct_layer2_kde": 94.1,
+      "mean_sigma_conf": 0.509
+    },
+    "Sr": {
+      "n": 180,
+      "pct_combined_in_ad": 23.3,
+      "pct_layer1_physics": 28.3,
+      "pct_layer2_kde": 80.0,
+      "mean_sigma_conf": 0.545
+    },
+    "La": {
+      "n": 125,
+      "pct_combined_in_ad": 72.0,
+      "pct_layer1_physics": 86.4,
+      "pct_layer2_kde": 82.4,
+      "mean_sigma_conf": 0.298
+    }
+  },
+  "regime_ad": {
+    "Ia": {
+      "n": 60,
+      "pct_combined_in_ad": 68.3,
+      "pct_layer1_physics": 70.0,
+      "pct_layer2_kde": 93.3
+    },
+    "Ib": {
+      "n": 354,
+      "pct_combined_in_ad": 57.1,
+      "pct_layer1_physics": 58.8,
+      "pct_layer2_kde": 91.8
+    },
+    "II": {
+      "n": 331,
+      "pct_combined_in_ad": 72.5,
+      "pct_layer1_physics": 75.5,
+      "pct_layer2_kde": 90.6
+    },
+    "III": {
+      "n": 559,
+      "pct_combined_in_ad": 36.7,
+      "pct_layer1_physics": 42.0,
+      "pct_layer2_kde": 88.2
+    }
+  },
+  "shortlist_ad": {
+    "pct_combined_in_ad": 95.5,
+    "pct_physics_reliable": 100.0,
+    "pct_kde_in_domain": 95.5
+  }
+}

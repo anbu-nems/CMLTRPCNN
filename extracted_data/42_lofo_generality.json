@@ -1,0 +1,78 @@
+{
+  "lofo_asite": {
+    "Pb": {
+      "n_train": 1102,
+      "n_test": 86,
+      "r2": -0.09714949131011963,
+      "mae": 20.684755325317383,
+      "strength": "WEAK"
+    },
+    "Ba": {
+      "n_train": 762,
+      "n_test": 436,
+      "r2": 0.007969081401824951,
+      "mae": 8.755711555480957,
+      "strength": "WEAK"
+    },
+    "Ca": {
+      "n_train": 826,
+      "n_test": 421,
+      "r2": 0.6099848747253418,
+      "mae": 13.386331558227539,
+      "strength": "MODERATE"
+    },
+    "Sr": {
+      "n_train": 1035,
+      "n_test": 180,
+      "r2": 0.4338180422782898,
+      "mae": 9.022783279418945,
+      "strength": "WEAK"
+    },
+    "La": {
+      "n_train": 1080,
+      "n_test": 125,
+      "r2": 0.8486471176147461,
+      "mae": 5.192737102508545,
+      "strength": "STRONG"
+    }
+  },
+  "lofo_regime": {
+    "Ia": {
+      "n_train": 1128,
+      "n_test": 60,
+      "r2": -7.377993583679199,
+      "mae": 11.14255142211914,
+      "strength": "WEAK"
+    },
+    "Ib": {
+      "n_train": 846,
+      "n_test": 354,
+      "r2": -0.1576526165008545,
+      "mae": 12.636470794677734,
+      "strength": "WEAK"
+    },
+    "II": {
+      "n_train": 887,
+      "n_test": 331,
+      "r2": 0.6536393165588379,
+      "mae": 10.321593284606934,
+      "strength": "MODERATE"
+    },
+    "III": {
+      "n_train": 703,
+      "n_test": 559,
+      "r2": 0.4900623559951782,
+      "mae": 14.569382667541504,
+      "strength": "WEAK"
+    }
+  },
+  "decision": {
+    "mean_lofo_asite_r2": 0.3606539249420166,
+    "mean_lofo_regime_r2": -1.5979861319065094,
+    "pb_lofo_r2": -0.09714949131011963,
+    "ib_regime_lofo_r2": -0.1576526165008545,
+    "lofo_strength": "WEAK",
+    "preliminary_claim": "within-family mechanistic trend",
+    "note": "counterfactual_strong assumed True; run script 43 to confirm"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "CM-only": {
+    "train_r2": -0.8433,
+    "test_r2": -0.7842,
+    "train_mae": 27.203,
+    "test_mae": 32.382
+  },
+  "Ridge Regression": {
+    "train_r2": 0.8759,
+    "test_r2": 0.8766,
+    "train_mae": 6.483,
+    "test_mae": 9.04
+  },
+  "Random Forest": {
+    "train_r2": 0.9934,
+    "test_r2": 0.8761,
+    "train_mae": 1.235,
+    "test_mae": 8.335
+  },
+  "XGBoost": {
+    "train_r2": 0.9993,
+    "test_r2": 0.8296,
+    "train_mae": 0.42,
+    "test_mae": 8.417
+  },
+  "CatBoost": {
+    "train_r2": 0.9926,
+    "test_r2": 0.9082,
+    "train_mae": 1.704,
+    "test_mae": 7.183
+  },
+  "BPNN / MLP": {
+    "train_r2": 0.9874,
+    "test_r2": 0.9479,
+    "train_mae": 2.107,
+    "test_mae": 5.838
+  },
+  "PIRNN": {
+    "train_r2": 0.9852,
+    "test_r2": 0.956,
+    "train_mae": 2.102,
+    "test_mae": 4.878
+  },
+  "PCNN (CMLTRPCNNv7.7)": {
+    "train_r2": 0.9884,
+    "test_r2": 0.941,
+    "train_mae": 2.029,
+    "test_mae": 5.782
+  }
+}

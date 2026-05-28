@@ -1,0 +1,9 @@
+model,train_r2,train_mae,test_r2,test_mae,gap_r2
+CM-only,,,-0.492,26.59,
+Ridge,,,0.867,9.19,
+Random Forest,,,0.894,7.87,
+XGBoost,,,0.879,8.08,
+CatBoost,,,0.91,7.04,
+BPNN / MLP,,,0.957,5.4,
+PIRNN,,,0.937,6.01,
+PCNN(ours),,,0.941,5.77,

@@ -1,0 +1,28 @@
+{
+  "cs_features": [
+    "cs_cubic",
+    "cs_tetragonal",
+    "cs_orthorhombic",
+    "cs_rhombohedral",
+    "cs_monoclinic",
+    "cs_hexagonal",
+    "cs_trigonal",
+    "cs_perovskite"
+  ],
+  "n_cs_features": 8,
+  "n_residual_features": 43,
+  "n_calib_samples": 116,
+  "original": {
+    "r2": 0.9408,
+    "mae": 5.791
+  },
+  "cs_zeroed": {
+    "r2": 0.9346,
+    "mae": 6.124
+  },
+  "delta_r2": -0.0062,
+  "delta_mae": 0.332,
+  "mean_pred_change": 2.4041,
+  "max_pred_change": 11.6357,
+  "verdict": "MINOR \u2014 crystal system features have small but non-zero impact"
+}

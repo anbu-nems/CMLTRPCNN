@@ -1,0 +1,87 @@
+{
+  "description": "Physics law combinatorial ablation \u2014 2\u00b3 factorial design",
+  "laws": {
+    "I": "Clausius-Mossotti \u2014 electrostatic polarizability anchor (\u03b5r_CM)",
+    "II": "Lyddane-Sachs-Teller \u2014 soft-mode enhancement (\u03b4_LST \u2265 0)",
+    "III": "Reaney/Goldschmidt tilt \u2014 octahedral suppression (\u03b4_tilt \u2264 0)"
+  },
+  "n_test": 116,
+  "conditions": {
+    "000": {
+      "label": "No physics (residual only)",
+      "use_cm": false,
+      "use_lst": false,
+      "use_tilt": false,
+      "r2": 0.0013,
+      "mae": 24.588
+    },
+    "I": {
+      "label": "Law I only (CM)",
+      "use_cm": true,
+      "use_lst": false,
+      "use_tilt": false,
+      "r2": -0.7539,
+      "mae": 32.031
+    },
+    "II": {
+      "label": "Law II only (LST)",
+      "use_cm": false,
+      "use_lst": true,
+      "use_tilt": false,
+      "r2": 0.1059,
+      "mae": 29.413
+    },
+    "III": {
+      "label": "Law III only (Tilt)",
+      "use_cm": false,
+      "use_lst": false,
+      "use_tilt": true,
+      "r2": 0.0013,
+      "mae": 24.586
+    },
+    "I+II": {
+      "label": "Law I + II (CM + LST)",
+      "use_cm": true,
+      "use_lst": true,
+      "use_tilt": false,
+      "r2": 0.9588,
+      "mae": 4.739
+    },
+    "I+III": {
+      "label": "Law I + III (CM + Tilt)",
+      "use_cm": true,
+      "use_lst": false,
+      "use_tilt": true,
+      "r2": -0.7539,
+      "mae": 32.033
+    },
+    "II+III": {
+      "label": "Law II + III (LST + Tilt)",
+      "use_cm": false,
+      "use_lst": true,
+      "use_tilt": true,
+      "r2": 0.1061,
+      "mae": 29.411
+    },
+    "I+II+III": {
+      "label": "All Laws (I + II + III)",
+      "use_cm": true,
+      "use_lst": true,
+      "use_tilt": true,
+      "r2": 0.9588,
+      "mae": 4.74
+    },
+    "_marginal_contributions": {
+      "Law_I_CM": 0.0488,
+      "Law_II_LST": 0.9087,
+      "Law_III_Tilt": 0.0001,
+      "note": "Shapley-style: average marginal R\u00b2 gain across all contexts"
+    }
+  },
+  "marginal_contributions": {
+    "Law_I_CM": 0.0488,
+    "Law_II_LST": 0.9087,
+    "Law_III_Tilt": 0.0001,
+    "note": "Shapley-style: average marginal R\u00b2 gain across all contexts"
+  }
+}

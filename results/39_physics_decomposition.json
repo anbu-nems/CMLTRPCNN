@@ -1,0 +1,89 @@
+{
+  "n_samples": 1304,
+  "n_valid_cm": 1124,
+  "global_mean_f_lst": 1.219258427619934,
+  "global_median_f_lst": 0.9063423871994019,
+  "global_decomposition": {
+    "frac_cm": 0.4820217192173004,
+    "frac_lst": 0.5222418308258057,
+    "frac_tilt": 0.013324514962732792,
+    "frac_res": 0.013879891484975815
+  },
+  "f_lst_by_regime": {
+    "Ia": {
+      "mean": 0.44878149032592773,
+      "median": 0.3307379186153412,
+      "std": 0.2826440632343292,
+      "n": 60
+    },
+    "Ib": {
+      "mean": 0.5935367941856384,
+      "median": 0.3784753680229187,
+      "std": 0.6331061124801636,
+      "n": 354
+    },
+    "II": {
+      "mean": 1.383636713027954,
+      "median": 1.2494169473648071,
+      "std": 0.8821966648101807,
+      "n": 331
+    },
+    "III": {
+      "mean": 1.5908128023147583,
+      "median": 1.1576392650604248,
+      "std": 1.3936649560928345,
+      "n": 559
+    }
+  },
+  "f_lst_by_b_type": {
+    "d0 (Ti/Nb/Zr)": {
+      "mean": 1.0226662158966064,
+      "n": 222
+    },
+    "d10 (Zn/Ga)": {
+      "mean": 0.5265865921974182,
+      "n": 107
+    },
+    "RE (La/Y/Nd)": {
+      "mean": 1.4253989458084106,
+      "n": 379
+    },
+    "Other": {
+      "mean": 1.300060749053955,
+      "n": 596
+    }
+  },
+  "f_lst_by_a_site": {
+    "Ba": {
+      "mean": 0.6956520080566406,
+      "n": 436
+    },
+    "Ca": {
+      "mean": 1.741390347480774,
+      "n": 421
+    },
+    "Sr": {
+      "mean": 0.9130690693855286,
+      "n": 180
+    },
+    "Pb": {
+      "mean": 2.2664437294006348,
+      "n": 86
+    },
+    "La": {
+      "mean": 1.2333871126174927,
+      "n": 125
+    },
+    "Other": {
+      "mean": 0.670930027961731,
+      "n": 56
+    }
+  },
+  "tilt_lst_ratio_by_regime": {
+    "Ia": 0.03889216482639313,
+    "Ib": 0.37698325514793396,
+    "II": 0.02062327414751053,
+    "III": 0.002828305121511221
+  },
+  "architecture_insight": "REGIME_SCALES=[Ia:1.0, Ib:1.5, II:0.9, III:0.7] encode tilt physics into LST. Dedicated tilt branch adds negligible R\u00b2 (ablation: -0.001) because tilt effect on \u03b5r is mediated through soft-mode modulation, not direct geometric suppression."
+}

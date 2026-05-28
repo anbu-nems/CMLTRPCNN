@@ -1,0 +1,271 @@
+{
+  "counterfactual": {
+    "b_site_summaries": {
+      "Al": {
+        "n_pairs": 365,
+        "mean_delta_er": 20.827342465753425,
+        "lst_fraction": 0.9582102156775856,
+        "tilt_fraction": 0.034473003253379056,
+        "res_fraction": 0.007316781069035486,
+        "lst_er_correlation": 0.9820473537479633
+      },
+      "Ba": {
+        "n_pairs": 44,
+        "mean_delta_er": 16.352272727272727,
+        "lst_fraction": 0.9873348362213057,
+        "tilt_fraction": 2.2320531979883688e-05,
+        "res_fraction": 0.012642843246714459,
+        "lst_er_correlation": 0.9778493803874763
+      },
+      "Ca": {
+        "n_pairs": 1148,
+        "mean_delta_er": 28.30946864111498,
+        "lst_fraction": 0.9891221053543091,
+        "tilt_fraction": 9.319789203370463e-05,
+        "res_fraction": 0.010784696753657173,
+        "lst_er_correlation": 0.9574956732338284
+      },
+      "Co": {
+        "n_pairs": 75,
+        "mean_delta_er": 3.0866666666666664,
+        "lst_fraction": 0.950849713133039,
+        "tilt_fraction": 0.03253817743064687,
+        "res_fraction": 0.016612109436314134,
+        "lst_er_correlation": 0.5827724918781025
+      },
+      "Dy": {
+        "n_pairs": 8,
+        "mean_delta_er": 0.9000000000000004,
+        "lst_fraction": 0.8963756411605585,
+        "tilt_fraction": 8.382646976731255e-05,
+        "res_fraction": 0.10354053236967427,
+        "lst_er_correlation": 0.8625268219809675
+      },
+      "Er": {
+        "n_pairs": 12,
+        "mean_delta_er": -0.9666666666666686,
+        "lst_fraction": 0.9568458532553087,
+        "tilt_fraction": 5.225614646488215e-05,
+        "res_fraction": 0.04310189059822645,
+        "lst_er_correlation": 0.7160592238251214
+      },
+      "Eu": {
+        "n_pairs": 6,
+        "mean_delta_er": -7.099999999999999,
+        "lst_fraction": 0.996651851114644,
+        "tilt_fraction": 1.3094632810012377e-06,
+        "res_fraction": 0.0033468394220749743,
+        "lst_er_correlation": 0.26978294221466825
+      },
+      "Fe": {
+        "n_pairs": 9,
+        "mean_delta_er": -42.777777777777786,
+        "lst_fraction": 0.9940619016520486,
+        "tilt_fraction": 3.268393134372036e-05,
+        "res_fraction": 0.005905414416607859,
+        "lst_er_correlation": 0.9971105484169642
+      },
+      "Gd": {
+        "n_pairs": 8,
+        "mean_delta_er": -6.475,
+        "lst_fraction": 0.994847760378617,
+        "tilt_fraction": 2.2510735146181644e-06,
+        "res_fraction": 0.0051499885478683075,
+        "lst_er_correlation": 0.11493178659039573
+      },
+      "Ho": {
+        "n_pairs": 15,
+        "mean_delta_er": -0.9200000000000003,
+        "lst_fraction": 0.8916378127680774,
+        "tilt_fraction": 0.0001112513072611043,
+        "res_fraction": 0.10825093592466155,
+        "lst_er_correlation": 0.914020754753508
+      },
+      "La": {
+        "n_pairs": 1157,
+        "mean_delta_er": -12.614140017286086,
+        "lst_fraction": 0.9733570558219288,
+        "tilt_fraction": 0.0024318295729137194,
+        "res_fraction": 0.02421111460515755,
+        "lst_er_correlation": 0.8676683897002857
+      },
+      "Li": {
+        "n_pairs": 229,
+        "mean_delta_er": 37.77458515283843,
+        "lst_fraction": 0.9825570273792834,
+        "tilt_fraction": 1.9466000824948816e-05,
+        "res_fraction": 0.01742350661989162,
+        "lst_er_correlation": 0.9730573894563367
+      },
+      "Mg": {
+        "n_pairs": 920,
+        "mean_delta_er": 7.457717391304347,
+        "lst_fraction": 0.9637403784569155,
+        "tilt_fraction": 0.007070270997690254,
+        "res_fraction": 0.029189350545394347,
+        "lst_er_correlation": 0.873086733291223
+      },
+      "Nd": {
+        "n_pairs": 304,
+        "mean_delta_er": -32.52855263157895,
+        "lst_fraction": 0.9835655159592565,
+        "tilt_fraction": 8.242718266216093e-05,
+        "res_fraction": 0.016352056858081564,
+        "lst_er_correlation": 0.9633645107675721
+      },
+      "Ni": {
+        "n_pairs": 39,
+        "mean_delta_er": 38.44871794871794,
+        "lst_fraction": 0.9698781461314209,
+        "tilt_fraction": 0.026887461067506013,
+        "res_fraction": 0.0032343928010731063,
+        "lst_er_correlation": 0.8749446111842667
+      },
+      "Pb": {
+        "n_pairs": 5,
+        "mean_delta_er": -59.52,
+        "lst_fraction": 0.9918109713868042,
+        "tilt_fraction": 2.64074552376076e-06,
+        "res_fraction": 0.00818638786767225,
+        "lst_er_correlation": 0.7972393578701686
+      },
+      "Pr": {
+        "n_pairs": 10,
+        "mean_delta_er": 9.24,
+        "lst_fraction": 0.9872595025182559,
+        "tilt_fraction": 7.8670875682149e-06,
+        "res_fraction": 0.012732630394175947,
+        "lst_er_correlation": 0.9842167933565401
+      },
+      "Sm": {
+        "n_pairs": 390,
+        "mean_delta_er": 16.885025641025642,
+        "lst_fraction": 0.9813271525598021,
+        "tilt_fraction": 0.00041611351926775414,
+        "res_fraction": 0.018256733920930107,
+        "lst_er_correlation": 0.9634571797628911
+      },
+      "Sr": {
+        "n_pairs": 492,
+        "mean_delta_er": -1.0871138211382112,
+        "lst_fraction": 0.9497962913492377,
+        "tilt_fraction": 0.0156497777838698,
+        "res_fraction": 0.0345539308668925,
+        "lst_er_correlation": 0.7143790564337721
+      },
+      "Tb": {
+        "n_pairs": 5,
+        "mean_delta_er": -5.0600000000000005,
+        "lst_fraction": 0.9765089736084096,
+        "tilt_fraction": 2.0563407093962543e-05,
+        "res_fraction": 0.02347046298449622,
+        "lst_er_correlation": 0.8236674480882428
+      },
+      "Ti": {
+        "n_pairs": 512,
+        "mean_delta_er": -5.550859375000001,
+        "lst_fraction": 0.9867738562140965,
+        "tilt_fraction": 7.599427528211726e-05,
+        "res_fraction": 0.013150149510621316,
+        "lst_er_correlation": 0.788364055093553
+      },
+      "Y": {
+        "n_pairs": 10,
+        "mean_delta_er": 1.0800000000000005,
+        "lst_fraction": 0.8027263728425821,
+        "tilt_fraction": 0.00012340266603747067,
+        "res_fraction": 0.19715022449138048,
+        "lst_er_correlation": 0.9550182564566552
+      },
+      "Yb": {
+        "n_pairs": 30,
+        "mean_delta_er": -1.7133333333333325,
+        "lst_fraction": 0.9586586672710539,
+        "tilt_fraction": 7.796905056418482e-05,
+        "res_fraction": 0.04126336367838208,
+        "lst_er_correlation": 0.8969867301366776
+      },
+      "Zn": {
+        "n_pairs": 104,
+        "mean_delta_er": -0.14615384615384658,
+        "lst_fraction": 0.9422917465883847,
+        "tilt_fraction": 0.04459162753469154,
+        "res_fraction": 0.013116625876923742,
+        "lst_er_correlation": 0.5890556858753223
+      },
+      "Zr": {
+        "n_pairs": 44,
+        "mean_delta_er": 29.852272727272716,
+        "lst_fraction": 0.9320212257722975,
+        "tilt_fraction": 5.150269864147008e-06,
+        "res_fraction": 0.06797362395783835,
+        "lst_er_correlation": 0.9915280113413759
+      }
+    },
+    "n_total_pairs": 5949,
+    "mean_lst_fraction": 0.959928422983009,
+    "mean_delta_er_lst_correlation": 0.8172252474337551,
+    "counterfactual_strong": true
+  },
+  "permutation_asite": {
+    "observed_range": 1.6224249601364136,
+    "observed_means": {
+      "Pb": 2.2814037799835205,
+      "Ba": 0.6589788198471069,
+      "Ca": 1.657585620880127,
+      "Sr": 0.9062445163726807,
+      "La": 1.1303563117980957
+    },
+    "null_mean_range": 0.20936162769794464,
+    "null_std_range": 0.08557628095149994,
+    "p_value": 0.0,
+    "significant": true,
+    "n_permutations": 2000
+  },
+  "permutation_regime": {
+    "true_r2": 0.9824931621551514,
+    "all_perm_r2s": [
+      0.9824931621551514,
+      0.894289493560791,
+      0.7663118243217468,
+      -0.14719879627227783,
+      0.6850583553314209,
+      -0.14024841785430908,
+      0.9661955833435059,
+      0.8779918551445007,
+      0.9548562169075012,
+      0.7875072360038757,
+      0.8736028075218201,
+      0.7944575548171997,
+      0.772765576839447,
+      -0.14074504375457764,
+      0.9776076078414917,
+      0.8102586269378662,
+      -0.1451340913772583,
+      0.6010275483131409,
+      0.7076138854026794,
+      -0.11769294738769531,
+      0.9124559164047241,
+      0.8333107233047485,
+      -0.12903237342834473,
+      0.6171293258666992
+    ],
+    "n_perms_at_least_as_good": 1,
+    "total_perms": 24,
+    "p_value": 0.041666666666666664,
+    "significant": true,
+    "true_scales": [
+      1.0,
+      1.5,
+      0.9,
+      0.7
+    ]
+  },
+  "falsifiable_predictions": [
+    "Prediction 1 (Pb-lone-pair rule): ABO\u2083 perovskites with Pb\u00b2\u207a on the A-site should exhibit f_LST \u2265 2.1\u00d7 (95% CI lower bound) regardless of B-site, provided the compound falls in the Ib or II Reaney regime.",
+    "Prediction 2 (Ba suppression rule): A-site Ba\u00b2\u207a substitution for Pb\u00b2\u207a in iso-structural compounds should reduce \u03b5r by 1.6\u00d7 the CM baseline, mediated through the LST branch (|\u0394\u03b4_LST| >> |\u0394\u03b4_tilt|).",
+    "Prediction 3 (Regime Ib amplification): Compounds in Reaney regime Ib (incipient ferroelectric, tilt < 5\u00b0, soft-mode active) with lone-pair A-site cations should consistently achieve f_LST > 2.0\u00d7, making them the primary target class for high-\u03b5r engineering via composition design.",
+    "Prediction 4 (Structural descriptor failure): A model trained only on structural descriptors (tolerance factor, ionic radii, space group) without phonon-mode proxies (d\u2080_per_field, soft_mode_proxy) should fail to reproduce the Pb vs. Ba \u03b5r difference, even when chemical identity is provided.",
+    "Prediction 5 (Tilt-regime boundary crossing): Compounds near the Ib\u2192II regime boundary (continuous_tilt_strain \u2248 0.3-0.5) should show maximum sensitivity of \u03b5r to synthesis conditions, as small structural changes shift them between the amplification-dominant and suppression-dominant regime."
+  ]
+}

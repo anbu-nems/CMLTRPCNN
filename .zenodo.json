@@ -1,0 +1,51 @@
+{
+  "title": "CMLTRPCNN — physics-constrained neural network for ABO₃ microwave-dielectric permittivity prediction (companion code release)",
+  "description": "Custom Python code, trained 5-seed ensemble checkpoint, and supporting scripts for the manuscript 'Physics-constrained decomposition identifies an A-site chemistry hierarchy associated with model-attributed soft-mode amplification in ABO₃ microwave permittivity'. The manuscript is under preparation for submission to a peer-reviewed journal; this repository is the code release that accompanies it. Includes the PCNN architecture (CMLTRPCNNv7.7), training pipeline, conformal calibration, applicability-domain analysis, virtual screening, physics-constrained genetic-algorithm inverse design, and per-figure reproduction scripts. Released under the MIT license.",
+  "creators": [
+    {
+      "name": "<First Author>",
+      "affiliation": "<Affiliation 1>",
+      "orcid": "<ORCID>"
+    },
+    {
+      "name": "<Second Author>",
+      "affiliation": "<Affiliation 1>"
+    },
+    {
+      "name": "<Senior Author>",
+      "affiliation": "<Affiliation 2>",
+      "orcid": "<ORCID>"
+    }
+  ],
+  "keywords": [
+    "physics-informed neural network",
+    "perovskite",
+    "microwave dielectric",
+    "ABO3",
+    "Clausius-Mossotti",
+    "Lyddane-Sachs-Teller",
+    "soft-mode",
+    "interpretable machine learning",
+    "conformal prediction",
+    "inverse design"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "upload_type": "software",
+  "communities": [
+    {
+      "identifier": "physics"
+    },
+    {
+      "identifier": "materials-science"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "<DATASET_DOI_PLACEHOLDER>",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ]
+}

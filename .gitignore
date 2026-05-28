@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build artefacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Logs and temp files
+*.log
+*.tmp
+.cache/
+catboost_info/learn.tsv
+catboost_info/time_left.tsv
+
+# Large auxiliary files (rules of thumb; adjust per release policy)
+# Note: model_weights/, models/, data/ kept ON PURPOSE for reproducibility

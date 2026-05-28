@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite both the paper and this software."
+type: software
+title: "CMLTRPCNN — physics-constrained neural network for ABO₃ microwave-dielectric permittivity prediction"
+abstract: "Physics-constrained neural network that decomposes ABO₃ microwave-dielectric permittivity into Clausius-Mossotti, Lyddane-Sachs-Teller, octahedral-tilt and confidence-gated residual contributions. Includes the trained 5-seed ensemble, training pipeline, conformal calibration, applicability-domain analysis, virtual screening, and physics-constrained genetic-algorithm inverse design."
+version: "1.0.0"
+date-released: "2026-05-29"
+license: MIT
+repository-code: "https://github.com/anbu-nems/CMLTRPCNN"
+url: "https://github.com/anbu-nems/CMLTRPCNN"
+identifiers:
+  - type: doi
+    value: "<ZENODO_CODE_DOI_PLACEHOLDER>"
+    description: Zenodo archival snapshot
+authors:
+  - given-names: "<First>"
+    family-names: "<Author>"
+    affiliation: "<Affiliation 1>"
+    orcid: "https://orcid.org/<ORCID>"
+  - given-names: "<Second>"
+    family-names: "<Author>"
+    affiliation: "<Affiliation 1>"
+  - given-names: "<Senior>"
+    family-names: "<Author>"
+    affiliation: "<Affiliation 2>"
+    orcid: "https://orcid.org/<ORCID>"
+preferred-citation:
+  type: generic
+  title: "Physics-constrained decomposition identifies an A-site chemistry hierarchy associated with model-attributed soft-mode amplification in ABO₃ microwave permittivity"
+  notes: "Manuscript under preparation / submitted; journal information to be added on acceptance."
+  year: 2026
+  authors:
+    - given-names: "<First>"
+      family-names: "<Author>"
+    - given-names: "<Second>"
+      family-names: "<Author>"
+    - given-names: "<Senior>"
+      family-names: "<Author>"

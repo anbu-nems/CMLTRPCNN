@@ -1,0 +1,9 @@
+model,cv_r2_mean,cv_r2_std
+CM-only,-0.862,0.355
+Ridge,0.721,0.19
+PIRNN,0.863,0.181
+Random Forest,0.901,0.057
+BPNN / MLP,0.914,0.093
+XGBoost,0.928,0.053
+CatBoost,0.93,0.041
+PCNN(ours),0.893,0.043

@@ -1,0 +1,9 @@
+x,height,label,ref_line_value,ref_line_label
+0,56.4,"Layer 1
+physics gate
+(σ_conf)",100.0,
+1,94.9,"Layer 2
+KDE density
+(PCA+KDE)",,
+2,52.8,"Combined
+(both layers)",,

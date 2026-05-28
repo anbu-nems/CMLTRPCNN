@@ -1,0 +1,96 @@
+CMLTRPCNNv7.7 — Full Hyperparameters (Final, Trial 97)
+=======================================================
+
+ARCHITECTURE
+------------
+Trunk hidden units       : 384
+Trunk residual blocks    : 1
+LST branch hidden units  : 96
+Tilt branch hidden units : 64
+Residual branch hidden   : 256
+Residual scale           : 44.897
+Dropout                  : 0.1672
+Hidden activation        : SiLU (fixed)
+delta_LST/tilt activation: Softplus (fixed)
+delta_res activation     : Tanh (fixed)
+Normalisation            : LayerNorm per branch (fixed)
+
+LAYER STRUCTURE (main path, CM available)
+------------------------------------------
+Input                    : 103 features (30 LST + 30 Tilt + 43 Residual)
+Trunk hidden layer 1     : 384 neurons  (Linear 103→384 + LayerNorm + SiLU)
+Trunk hidden layer 2     : 384 neurons  (ResBlock Linear 384→384, skip connection)
+Trunk hidden layer 3     : 384 neurons  (ResBlock Linear 384→384, skip connection)
+Trunk hidden layer 4     : 192 neurons  (trunk_proj Linear 384→192 + SiLU)
+LST hidden layer 5       :  96 neurons  (Linear 222→96, input = trunk+LST feats)
+LST hidden layer 6       :  48 neurons  (Linear 96→48)
+Tilt hidden layer 7      :  64 neurons  (Linear 222→64, input = trunk+Tilt feats)
+Tilt hidden layer 8      :  32 neurons  (Linear 64→32)
+Residual hidden layer 9  : 256 neurons  (Linear 236→256, input = trunk+Res+ctx)
+Residual hidden layer 10 : 256 neurons  (Linear 256→256)
+Residual hidden layer 11 : 128 neurons  (Linear 256→128)
+                         -------
+Total hidden layers      : 11
+Total hidden neurons     : 2,224
+  (384+384+384+192 + 96+48 + 64+32 + 256+256+128 = 2,224)
+
+Fallback MLP (no-CM path, ~8% of samples):
+  Hidden layer 1         : 256 neurons  (Linear 43→256)
+  Hidden layer 2         :  64 neurons  (Linear 256→64)
+  Output                 :   1 neuron   (Linear 64→1)
+
+OPTIMISATION
+------------
+Optimiser                : AdamW (fixed)
+Learning rate            : 1.107e-3
+Weight decay             : 2.301e-5
+Batch size               : 128
+Training epochs          : 500 (fixed)
+Early stopping patience  : 100 (fixed)
+Mixup alpha              : 0.02518
+
+STOCHASTIC WEIGHT AVERAGING
+----------------------------
+SWA start fraction       : 0.7646  (epoch ~382 / 500)
+SWA learning rate        : 2.513e-5
+
+PHYSICS LOSS WEIGHTS
+--------------------
+lambda_LST (capacity penalty)  : 1.484e-3
+lambda_GII (bond-valence floor): 0.030  *
+lambda_VCA (VCA consistency)   : 4.470e-2
+Log-loss alpha (robust loss)   : 0.505
+
+* lambda_GII note: original Optuna value (4.872e-3) was tuned when GII=zeros
+  (bug — constraint active on 100% of samples). Discarded. Re-tuned via grid
+  search with real GII values → 0.030 selected. GII floor constraint now active
+  on stable perovskites only (GII < 0.3, n=245/1304, 18.8% of dataset).
+  See results/gii_grid_search.json.
+
+ENSEMBLE
+--------
+Number of seeds          : 5
+Prediction               : mean of 5 independently-seeded models
+
+DATASET & SPLIT
+---------------
+Total samples            : 1,304  (epsilon_r <= 143, cleaned)
+Training set             : 1,188
+Held-out calibration set : 116
+Split method             : GroupShuffleSplit (test_size=0.10, random_state=2026)
+                           zero chemistry-family overlap
+
+PERFORMANCE
+-----------
+Held-out R2              : 0.941   (n=116, 64% Regime III — stringent OOD)
+Held-out MAE             : 5.77
+Formula-split 5-fold CV  : 0.946 +/- 0.008
+Strat-GSS 5-fold CV      : 0.893 +/- 0.044   (primary metric)
+In-sample R2             : 0.988
+Conformal 90% CI         : q90 = 14.38, empirical coverage = 90.5%
+
+--------------------------------------------------------------
+Tunable HPs found by Optuna (100 trials, TPE sampler, Trial 97)
+Objective: formula-split R2 (5-fold CV, zero family overlap)
+Fixed choices set before search: activation, optimiser,
+  normalisation, epochs, early stopping

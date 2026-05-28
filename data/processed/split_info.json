@@ -1,0 +1,28 @@
+{
+  "description": "CMLTRPCNNv7.7 \u2014 Data split information",
+  "total_samples": 1360,
+  "split_strategy": "Family-stratified holdout: 10% held out by chemistry family (no family overlap)",
+  "train_set": {
+    "n": 1237,
+    "file": "train_set.csv",
+    "note": "Used for model training and Strat-GSS cross-validation (5-fold within this set)"
+  },
+  "test_holdout_set": {
+    "n": 123,
+    "file": "test_holdout_set.csv",
+    "note": "Completely withheld during all training and hyperparameter tuning. Used only for final evaluation."
+  },
+  "validation_strategy": {
+    "method": "Strat-GSS (Stratified Group-Shuffle-Split)",
+    "n_splits": 5,
+    "within": "train_set only",
+    "note": "No separate fixed validation split. CV folds are constructed within train_set for HP tuning."
+  },
+  "scaler": {
+    "type": "StandardScaler per branch (LST, Tilt, Residual)",
+    "fitted_on": "train_set only (n=1237)",
+    "file": "cmltrv77_scalers.pkl"
+  },
+  "random_seed": 42,
+  "family_split_seed": 42
+}

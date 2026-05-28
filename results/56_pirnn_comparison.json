@@ -1,0 +1,29 @@
+{
+  "comparison": "PIRNN vs CMLTRPCNNv7.7 (PCNN)",
+  "protocol": "Strat-GSS 5-fold CV + held-out set (n=116)",
+  "PIRNN": {
+    "description": "Physics-Input Residual NN \u2014 all 103 features in single encoder, sign constraints only, no branch partition",
+    "n_seeds": 3,
+    "strat_gss_r2_mean": 0.8634,
+    "strat_gss_r2_std": 0.1814,
+    "strat_gss_r2_per_fold": [
+      0.9804,
+      0.5082,
+      0.9732,
+      0.9749,
+      0.8803
+    ],
+    "holdout_r2": 0.9374,
+    "holdout_mae": 6.005
+  },
+  "PCNN": {
+    "description": "CMLTRPCNNv7.7 \u2014 strict 3-way feature partition, regime scaling, confidence gate",
+    "strat_gss_r2_mean": 0.8928,
+    "strat_gss_r2_std": 0.0435,
+    "holdout_r2": 0.9412,
+    "holdout_mae": 5.773
+  },
+  "delta_strat_gss_r2": 0.0294,
+  "delta_holdout_r2": 0.0038,
+  "verdict": "PCNN architectural constraints provide moderate improvement over physics-input baseline"
+}

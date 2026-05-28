@@ -1,0 +1,21 @@
+{
+  "scope": "Scope A \u2014 quick check (80:20)",
+  "test_size": 0.2,
+  "seed_split": 2026,
+  "n_train": 1065,
+  "n_holdout": 239,
+  "family_overlap": 0,
+  "r2_holdout": 0.9186906218528748,
+  "mae_holdout": 7.333458423614502,
+  "ensemble_std": 2.2926883697509766,
+  "conformal_q90": 16.67890167236328,
+  "train_time_sec": 109.2050371170044,
+  "device": "mps",
+  "vs_canonical": {
+    "canonical_split": "90:10",
+    "canonical_r2": 0.9412,
+    "canonical_mae": 5.773,
+    "canonical_n_hold": 116,
+    "canonical_q90": 14.38
+  }
+}

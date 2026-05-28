@@ -1,0 +1,8 @@
+bar0_x,bar0_height,bar0_label,errorbar1_x,errorbar1_y,ref_line_value,ref_line_label
+0,0.7205,Ridge,0.0,0.7205,1.0,
+1,0.9005,RF,1.0,0.9005,,
+2,0.9275,XGB,2.0,0.9275,,
+3,0.9298,CatB,3.0,0.9298,,
+4,0.9144,BPNN,4.0,0.9144,,
+5,0.8634,PIRNN,5.0,0.8634,,
+6,0.8928,PCNN,6.0,0.8928,,

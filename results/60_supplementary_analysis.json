@@ -1,0 +1,401 @@
+{
+  "shap": {
+    "top_30_features": [
+      {
+        "feature": "er_CM",
+        "mean_abs_shap": 4.97965
+      },
+      {
+        "feature": "soft_mode_tolerance_weighted",
+        "mean_abs_shap": 3.20533
+      },
+      {
+        "feature": "weighted_SOJT",
+        "mean_abs_shap": 3.14827
+      },
+      {
+        "feature": "a_off_centering_frac",
+        "mean_abs_shap": 2.75899
+      },
+      {
+        "feature": "regime_III",
+        "mean_abs_shap": 2.63974
+      },
+      {
+        "feature": "a_field_strength",
+        "mean_abs_shap": 2.53432
+      },
+      {
+        "feature": "alpha_B",
+        "mean_abs_shap": 2.38797
+      },
+      {
+        "feature": "lst_enhancement_proxy",
+        "mean_abs_shap": 2.14171
+      },
+      {
+        "feature": "soft_mode_activity",
+        "mean_abs_shap": 2.1038
+      },
+      {
+        "feature": "has_cm",
+        "mean_abs_shap": 1.99225
+      },
+      {
+        "feature": "b_avg_atomic_mass",
+        "mean_abs_shap": 1.78554
+      },
+      {
+        "feature": "regime_II",
+        "mean_abs_shap": 1.69393
+      },
+      {
+        "feature": "sigma_CM",
+        "mean_abs_shap": 1.65969
+      },
+      {
+        "feature": "chi_A",
+        "mean_abs_shap": 1.58985
+      },
+      {
+        "feature": "d0_B_fraction",
+        "mean_abs_shap": 1.50277
+      },
+      {
+        "feature": "delta_chi_A",
+        "mean_abs_shap": 1.4527
+      },
+      {
+        "feature": "d0_B_polarizable_A",
+        "mean_abs_shap": 1.32777
+      },
+      {
+        "feature": "phase_boundary_dist_ib_ii",
+        "mean_abs_shap": 1.20953
+      },
+      {
+        "feature": "covalency_ratio",
+        "mean_abs_shap": 1.1965
+      },
+      {
+        "feature": "b_field_strength",
+        "mean_abs_shap": 1.13808
+      },
+      {
+        "feature": "b_size_mismatch",
+        "mean_abs_shap": 1.10277
+      },
+      {
+        "feature": "ordering_proxy",
+        "mean_abs_shap": 1.08187
+      },
+      {
+        "feature": "soft_mode_proxy",
+        "mean_abs_shap": 1.04882
+      },
+      {
+        "feature": "ab_pol_diff",
+        "mean_abs_shap": 1.01561
+      },
+      {
+        "feature": "b_o_reduced_mass",
+        "mean_abs_shap": 0.99992
+      },
+      {
+        "feature": "ptype_simple",
+        "mean_abs_shap": 0.91654
+      },
+      {
+        "feature": "RE_B_fraction",
+        "mean_abs_shap": 0.8842
+      },
+      {
+        "feature": "has_sigma_CM",
+        "mean_abs_shap": 0.81131
+      },
+      {
+        "feature": "has_d10_B",
+        "mean_abs_shap": 0.79952
+      },
+      {
+        "feature": "er_CM",
+        "mean_abs_shap": 0.77322
+      }
+    ]
+  },
+  "residual_distribution": {
+    "mean_residual": 0.5405,
+    "std_residual": 8.029,
+    "normality_p": 0.0007,
+    "normality_test": "Shapiro-Wilk",
+    "qq_r": 0.9759,
+    "bias_by_regime": {
+      "Ia": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0
+      },
+      "Ib": {
+        "mean": 1.805,
+        "std": 8.889,
+        "n": 12
+      },
+      "II": {
+        "mean": 4.326,
+        "std": 5.063,
+        "n": 30
+      },
+      "III": {
+        "mean": -1.199,
+        "std": 8.292,
+        "n": 74
+      }
+    }
+  },
+  "calibration": {
+    "calibration_curve": [
+      {
+        "nominal": 0.95,
+        "empirical": 0.9569,
+        "q_hat": 17.727
+      },
+      {
+        "nominal": 0.9,
+        "empirical": 0.9052,
+        "q_hat": 14.377
+      },
+      {
+        "nominal": 0.85,
+        "empirical": 0.8534,
+        "q_hat": 12.084
+      },
+      {
+        "nominal": 0.8,
+        "empirical": 0.8017,
+        "q_hat": 10.835
+      },
+      {
+        "nominal": 0.75,
+        "empirical": 0.75,
+        "q_hat": 8.548
+      },
+      {
+        "nominal": 0.7,
+        "empirical": 0.7069,
+        "q_hat": 6.425
+      },
+      {
+        "nominal": 0.65,
+        "empirical": 0.6552,
+        "q_hat": 5.821
+      },
+      {
+        "nominal": 0.6,
+        "empirical": 0.6034,
+        "q_hat": 5.385
+      },
+      {
+        "nominal": 0.55,
+        "empirical": 0.5517,
+        "q_hat": 4.777
+      },
+      {
+        "nominal": 0.5,
+        "empirical": 0.5,
+        "q_hat": 3.792
+      },
+      {
+        "nominal": 0.45,
+        "empirical": 0.4569,
+        "q_hat": 3.533
+      },
+      {
+        "nominal": 0.4,
+        "empirical": 0.4052,
+        "q_hat": 3.172
+      },
+      {
+        "nominal": 0.35,
+        "empirical": 0.3534,
+        "q_hat": 2.488
+      },
+      {
+        "nominal": 0.3,
+        "empirical": 0.3017,
+        "q_hat": 1.965
+      },
+      {
+        "nominal": 0.25,
+        "empirical": 0.25,
+        "q_hat": 1.44
+      },
+      {
+        "nominal": 0.2,
+        "empirical": 0.2069,
+        "q_hat": 1.23
+      },
+      {
+        "nominal": 0.15,
+        "empirical": 0.1552,
+        "q_hat": 0.866
+      },
+      {
+        "nominal": 0.1,
+        "empirical": 0.1034,
+        "q_hat": 0.573
+      },
+      {
+        "nominal": 0.05,
+        "empirical": 0.0517,
+        "q_hat": 0.267
+      }
+    ],
+    "max_deviation_from_ideal": 0.0069
+  },
+  "outlier_analysis": {
+    "mae": 5.773,
+    "threshold_2mae": 11.546,
+    "n_outliers": 20,
+    "outlier_fraction": 0.1724,
+    "top_outliers": [
+      {
+        "formula": "Ca0.73Nd0.18TiO3",
+        "actual": 141.0,
+        "predicted": 113.8,
+        "error": 27.17,
+        "regime": "III",
+        "a_site": "Ca"
+      },
+      {
+        "formula": "Ca0.3355Nd0.7255Li0.225TiO3",
+        "actual": 101.0,
+        "predicted": 77.2,
+        "error": 23.82,
+        "regime": "III",
+        "a_site": "Other"
+      },
+      {
+        "formula": "Ca0.85Nd0.1TiO3",
+        "actual": 141.0,
+        "predicted": 119.3,
+        "error": 21.69,
+        "regime": "III",
+        "a_site": "Ca"
+      },
+      {
+        "formula": "Ca0.85Nd0.10TiO3",
+        "actual": 141.0,
+        "predicted": 121.0,
+        "error": 19.96,
+        "regime": "III",
+        "a_site": "Ca"
+      },
+      {
+        "formula": "Ca5Ta2ZrO12",
+        "actual": 21.0,
+        "predicted": 39.4,
+        "error": 18.35,
+        "regime": "III",
+        "a_site": "Ca"
+      },
+      {
+        "formula": "Ca5Ta2HfO12",
+        "actual": 17.0,
+        "predicted": 34.6,
+        "error": 17.58,
+        "regime": "III",
+        "a_site": "Ca"
+      },
+      {
+        "formula": "BaLi0.3889Nb0.5W0.2O3",
+        "actual": 31.0,
+        "predicted": 46.7,
+        "error": 15.72,
+        "regime": "Ib",
+        "a_site": "Ba"
+      },
+      {
+        "formula": "Ca0.22Nd0.52TiO3",
+        "actual": 102.0,
+        "predicted": 86.6,
+        "error": 15.37,
+        "regime": "III",
+        "a_site": "Other"
+      },
+      {
+        "formula": "Sr3ZnNb2O9",
+        "actual": 20.7,
+        "predicted": 35.9,
+        "error": 15.22,
+        "regime": "II",
+        "a_site": "Sr"
+      },
+      {
+        "formula": "Ca0.1Nd0.9Mg0.45Ti0.55O3",
+        "actual": 42.0,
+        "predicted": 27.1,
+        "error": 14.87,
+        "regime": "III",
+        "a_site": "Other"
+      }
+    ]
+  },
+  "learning_curve": [
+    {
+      "fraction": 0.1,
+      "n_train": 118,
+      "train_r2_mean": 0.9914,
+      "train_r2_std": 0.0047,
+      "val_r2_mean": 0.7248,
+      "val_r2_std": 0.1392
+    },
+    {
+      "fraction": 0.2,
+      "n_train": 237,
+      "train_r2_mean": 0.9948,
+      "train_r2_std": 0.0018,
+      "val_r2_mean": 0.86,
+      "val_r2_std": 0.0143
+    },
+    {
+      "fraction": 0.35,
+      "n_train": 415,
+      "train_r2_mean": 0.9941,
+      "train_r2_std": 0.0018,
+      "val_r2_mean": 0.8621,
+      "val_r2_std": 0.016
+    },
+    {
+      "fraction": 0.5,
+      "n_train": 594,
+      "train_r2_mean": 0.9933,
+      "train_r2_std": 0.0023,
+      "val_r2_mean": 0.895,
+      "val_r2_std": 0.0148
+    },
+    {
+      "fraction": 0.65,
+      "n_train": 772,
+      "train_r2_mean": 0.9895,
+      "train_r2_std": 0.0015,
+      "val_r2_mean": 0.8904,
+      "val_r2_std": 0.0167
+    },
+    {
+      "fraction": 0.8,
+      "n_train": 950,
+      "train_r2_mean": 0.9917,
+      "train_r2_std": 0.0004,
+      "val_r2_mean": 0.9048,
+      "val_r2_std": 0.0192
+    },
+    {
+      "fraction": 1.0,
+      "n_train": 1188,
+      "train_r2_mean": 0.9898,
+      "train_r2_std": 0.0009,
+      "val_r2_mean": 0.9093,
+      "val_r2_std": 0.0022
+    }
+  ]
+}

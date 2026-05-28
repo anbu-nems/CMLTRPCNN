@@ -1,0 +1,66 @@
+{
+  "model": "CMLTRPCNNv77",
+  "method": "Split conformal prediction (Papadopoulos 2002)",
+  "n_calibration": 116,
+  "r2_calibration": 0.9412,
+  "mae_calibration": 5.773,
+  "absolute_intervals": {
+    "95pct": {
+      "nominal": 0.95,
+      "q_hat_absolute": 17.727,
+      "empirical_coverage": 0.9569,
+      "interval_width": 35.454
+    },
+    "90pct": {
+      "nominal": 0.9,
+      "q_hat_absolute": 14.377,
+      "empirical_coverage": 0.9052,
+      "interval_width": 28.754
+    },
+    "85pct": {
+      "nominal": 0.85,
+      "q_hat_absolute": 12.084,
+      "empirical_coverage": 0.8534,
+      "interval_width": 24.169
+    },
+    "80pct": {
+      "nominal": 0.8,
+      "q_hat_absolute": 10.835,
+      "empirical_coverage": 0.8017,
+      "interval_width": 21.671
+    }
+  },
+  "relative_intervals": {
+    "95pct": {
+      "nominal": 0.95,
+      "q_hat_relative": 0.3985,
+      "empirical_coverage": 0.9569,
+      "interval_halfwidth_pct": 39.85
+    },
+    "90pct": {
+      "nominal": 0.9,
+      "q_hat_relative": 0.3466,
+      "empirical_coverage": 0.9052,
+      "interval_halfwidth_pct": 34.66
+    },
+    "85pct": {
+      "nominal": 0.85,
+      "q_hat_relative": 0.2791,
+      "empirical_coverage": 0.8534,
+      "interval_halfwidth_pct": 27.91
+    },
+    "80pct": {
+      "nominal": 0.8,
+      "q_hat_relative": 0.2478,
+      "empirical_coverage": 0.8017,
+      "interval_halfwidth_pct": 24.78
+    }
+  },
+  "primary_90pct": {
+    "q_hat_absolute": 14.377,
+    "interval_width": 28.754,
+    "empirical_coverage": 0.9052,
+    "q_hat_relative": 0.3466,
+    "relative_halfwidth_pct": 34.66
+  }
+}

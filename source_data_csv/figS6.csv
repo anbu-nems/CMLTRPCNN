@@ -1,0 +1,9 @@
+barh0_y,barh0_width,barh0_label,errorbar1_x,errorbar1_y,y,width,ref_line_value,ref_line_label
+0,-0.862,CM-only,-0.862,0,0,26.59,0.0,
+1,0.721,Ridge,0.721,1,1,9.19,0.0,
+2,0.901,Random Forest,0.901,2,2,7.87,,
+3,0.928,XGBoost,0.928,3,3,8.08,,
+4,0.93,CatBoost,0.93,4,4,7.04,,
+5,0.914,BPNN/MLP,0.914,5,5,5.4,,
+6,0.863,PIRNN,0.863,6,6,6.0,,
+7,0.893,PCNN (ours),0.893,7,7,5.77,,

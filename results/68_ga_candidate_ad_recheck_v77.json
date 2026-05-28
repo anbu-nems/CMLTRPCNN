@@ -1,0 +1,62 @@
+{
+  "AD_definition": "real dual AD (script 49): layer1 sigma_conf head < 0.35 AND layer2 KDE density > p5",
+  "Q90": 14.38,
+  "train_nn_dist_median": 1.2218,
+  "train_nn_dist_p95": 5.5103,
+  "candidates": {
+    "Pb-free": {
+      "formula": "Ba0.0463Sr0.9537Ti0.8423Zr0.1546Nb0.0027O3",
+      "predicted_er": 146.7,
+      "conformal_lower_90": 132.3,
+      "ensemble_std": 5.06,
+      "sigma_conf_head": 0.163,
+      "layer1_physics_in": true,
+      "kde_log_density": -19.6,
+      "kde_threshold": -16.02,
+      "layer2_kde_in": false,
+      "IN_AD_real": false,
+      "nn_dist_to_train": 5.964,
+      "er_cm": 37.8,
+      "delta_lst": 107.5,
+      "delta_tilt": -0.0,
+      "delta_res": 1.43,
+      "f_lst": 2.85
+    },
+    "d0-strict": {
+      "formula": "Ba0.0027Sr0.008Ca0.2814Pb0.7079Ti0.5022Zr0.4163Nb0.0025Ta0.0791O3",
+      "predicted_er": 166.0,
+      "conformal_lower_90": 151.6,
+      "ensemble_std": 3.14,
+      "sigma_conf_head": 0.21,
+      "layer1_physics_in": true,
+      "kde_log_density": -31.73,
+      "kde_threshold": -16.02,
+      "layer2_kde_in": false,
+      "IN_AD_real": false,
+      "nn_dist_to_train": 8.956,
+      "er_cm": 51.2,
+      "delta_lst": 113.5,
+      "delta_tilt": -0.0,
+      "delta_res": 1.26,
+      "f_lst": 2.22
+    },
+    "Pb-allowed": {
+      "formula": "Ba0.0014Sr0.0067Ca0.2847Pb0.7073Ti0.5601Zr0.3542Nb0.0042Ta0.0703Sn0.0112O3",
+      "predicted_er": 170.4,
+      "conformal_lower_90": 156.1,
+      "ensemble_std": 2.93,
+      "sigma_conf_head": 0.202,
+      "layer1_physics_in": true,
+      "kde_log_density": -36.42,
+      "kde_threshold": -16.02,
+      "layer2_kde_in": false,
+      "IN_AD_real": false,
+      "nn_dist_to_train": 10.57,
+      "er_cm": 53.7,
+      "delta_lst": 115.3,
+      "delta_tilt": -0.0,
+      "delta_res": 1.42,
+      "f_lst": 2.15
+    }
+  }
+}

@@ -1,0 +1,9 @@
+model,cv_r2,holdout_r2,cv_holdout_gap
+CM-only,-0.862,-0.492,-0.37
+Ridge,0.721,0.867,-0.146
+Random Forest,0.901,0.894,0.007
+XGBoost,0.928,0.879,0.049
+CatBoost,0.93,0.91,0.02
+BPNN / MLP,0.914,0.957,-0.043
+PIRNN,0.863,0.937,-0.074
+PCNN (ours),0.893,0.941,-0.048
