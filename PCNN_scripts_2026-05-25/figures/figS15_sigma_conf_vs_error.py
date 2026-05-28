@@ -22,7 +22,7 @@ import pandas as pd
 import sqlite3
 import json
 import os
-ROOT_DIR = '/Users/anbu/Desktop/NC figures/all_figures'
+ROOT_DIR = './figures_output/all_figures'
 OUT_DIR = f'{ROOT_DIR}/supp'
 EXTRACT_DIR = f'{ROOT_DIR}/extracted_data'
 PIML = '/Users/anbu/Desktop/PIML/piml_ceramic'

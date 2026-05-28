@@ -19,9 +19,9 @@ import numpy as np
 import pandas as pd
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT_DIR = "./figures_output/all_figures/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
-EXTRACT = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data"
+EXTRACT = "./extracted_data"
 PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
 
 plt.rcParams.update({

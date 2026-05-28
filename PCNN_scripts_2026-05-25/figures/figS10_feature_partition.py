@@ -12,7 +12,7 @@ from matplotlib.patches import FancyBboxPatch
 import json, os
 
 PIML = "/Users/anbu/Desktop/PIML/piml_ceramic"
-OUT  = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT  = "./figures_output/all_figures/supp"
 os.makedirs(OUT, exist_ok=True)
 
 plt.rcParams.update({

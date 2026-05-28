@@ -17,9 +17,9 @@ import numpy as np
 import json
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT_DIR = "./figures_output/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
-PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
+PIML    = "."
 
 plt.rcParams.update({
     "font.family": "sans-serif",

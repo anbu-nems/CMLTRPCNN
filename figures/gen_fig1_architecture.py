@@ -25,7 +25,7 @@ if not API_KEY:
     sys.exit(1)
 
 MODEL      = "gemini-2.0-flash-preview-image-generation"
-OUTPUT_DIR = "/Users/anbu/Desktop/NC figures/main"
+OUTPUT_DIR = "./figures_output/main"
 client     = genai.Client(api_key=API_KEY)
 
 PROMPT = """

@@ -16,9 +16,9 @@ import os, sys
 
 # (figS1 reads the bundled CSV directly; no feature_engineering import needed)
 
-OUT_DIR  = "/Users/anbu/Desktop/NC figures/all_figures/supp"
-FM_PATH  = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed/feature_matrix_v7.parquet"
-CSV_PATH = "/Users/anbu/Desktop/PIML/piml_ceramic/data/raw/mixed_dataset_clean.csv"
+OUT_DIR  = "./figures_output/all_figures/supp"
+FM_PATH  = "./data/processed/feature_matrix_v7.parquet"
+CSV_PATH = "./data/raw/mixed_dataset_clean.csv"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 plt.rcParams.update({

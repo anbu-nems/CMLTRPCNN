@@ -7,8 +7,8 @@ colored by Reaney regime. Reveals that many independent crystal-chemistry
 descriptors track εr in physically expected ways.
 
 Inputs (already extracted):
-  /Users/anbu/Desktop/NC figures/all_figures/extracted_data/decomposition_per_sample.csv
-  /Users/anbu/Desktop/PIML/piml_ceramic/data/processed/feature_matrix_v7.parquet
+  ./extracted_data/decomposition_per_sample.csv
+  ./data/processed/feature_matrix_v7.parquet
 
 Outputs:
   all_figures/supp/figS21_descriptor_panels.{pdf,png}
@@ -22,8 +22,8 @@ import numpy as np
 import pandas as pd
 import os
 
-OUT_FIG = "/Users/anbu/Desktop/NC figures/all_figures/supp"
-OUT_CSV = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data"
+OUT_FIG = "./figures_output/all_figures/supp"
+OUT_CSV = "./extracted_data"
 PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
 os.makedirs(OUT_FIG, exist_ok=True)
 os.makedirs(OUT_CSV, exist_ok=True)

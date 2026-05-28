@@ -40,7 +40,7 @@ GRAY      = "#B0BEC5"
 RED       = "#E74C3C"
 ORANGE    = "#E67E22"
 FIG_HALF  = (3.5, 4.0)
-OUT_DIR   = "/Users/anbu/Desktop/NC figures/main"
+OUT_DIR   = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── Data (top → bottom display order, reversed for barh) ──────────────────────

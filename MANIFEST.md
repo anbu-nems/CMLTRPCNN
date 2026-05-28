@@ -30,7 +30,7 @@ Generated for Nature Communications open-source deposit.
 
 These four files together fully define the model and reproduce the headline numbers:
 
-1. `src/model/model.py` — PyTorch model class (`CMLTRPCNNv71`)
+1. `src/model/model.py` — PyTorch model class (`CMLTRPCNN`)
 2. `src/training/train_final_model.py` — training pipeline
 3. `model_weights/cmltrv77_final.pt` — trained 5-seed state dicts
 4. `results/48_cmltrv77_retrain.json` — final metrics (R² = 0.941)

@@ -99,7 +99,7 @@ ax.set_yticks(y_pos_b); ax.set_yticklabels(regime_order)
 ax.set_xlabel("$R^2$ when regime held out entirely")
 ax.set_title("b  Leave-one-family-out: Reaney regime", loc="left")
 
-OUT = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT = "./figures_output/all_figures/supp"
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}/figS8_lofo.{ext}", dpi=300)
 print("Saved figS8_lofo.pdf and .png")

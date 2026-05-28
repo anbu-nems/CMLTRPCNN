@@ -43,7 +43,7 @@ REGIME_COLORS = {"Ia": "#264653", "Ib": "#2A9D8F", "II": "#E9C46A", "III": "#E76
 OUR_COLOR = "#2874A6"; GRAY = "#B0BEC5"; RED = "#E74C3C"
 FIG_FULL  = (7.2, 3.2)
 
-PROC_DIR = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed"
+PROC_DIR = "./data/processed"
 
 df        = pd.read_csv(f"{PROC_DIR}/test_holdout_predictions.csv")
 calib_idx = json.load(open(f"{PROC_DIR}/calibration_split_idx.json"))["calib_idx"]
@@ -125,7 +125,7 @@ ax.set_ylabel("Sample quantiles")
 ax.set_title("c  Normal Q-Q plot", loc="left")
 ax.legend()
 
-OUT = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT = "./figures_output/all_figures/supp"
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}/figS5_residuals.{ext}", dpi=300)
 print("Saved figS5_residuals.pdf and .png")

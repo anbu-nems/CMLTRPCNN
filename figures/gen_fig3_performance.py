@@ -35,9 +35,9 @@ def style4(ax, lw=0.8):
 
 REG = {"Ia": "#264653", "Ib": "#2A9D8F", "II": "#E9C46A", "III": "#E76F51"}
 OUR, ORANGE, GRAY = "#2874A6", "#F4A261", "#B0BEC5"
-PROC = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed"
-RES = "/Users/anbu/Desktop/PIML/piml_ceramic/results"
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+PROC = "./data/processed"
+RES = "./results"
+OUT_DIR = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Holdout predictions + regime

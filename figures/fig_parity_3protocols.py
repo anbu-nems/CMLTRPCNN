@@ -15,9 +15,9 @@ import pandas as pd
 import os
 from sklearn.metrics import r2_score, mean_absolute_error
 
-PROC_DIR  = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed"
-OUT_DIR   = "/Users/anbu/Desktop/NC figures/all_figures/supp"
-CV_CSV    = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data/cv_predictions_v77.csv"
+PROC_DIR  = "./data/processed"
+OUT_DIR   = "./figures_output/supp"
+CV_CSV    = "./extracted_data/cv_predictions_v77.csv"
 HOLD_CSV  = f"{PROC_DIR}/test_holdout_predictions.csv"
 HOLD_RAW  = f"{PROC_DIR}/test_holdout_set.csv"
 os.makedirs(OUT_DIR, exist_ok=True)

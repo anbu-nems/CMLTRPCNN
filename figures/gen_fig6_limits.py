@@ -41,8 +41,8 @@ def style4(ax, lw=0.8):
 
 OUR, GRAY, RED, ORANGE, GREEN = "#2874A6", "#B0BEC5", "#C0392B", "#E67E22", "#2A9D8F"
 ASITE = {"Pb": "#C0392B", "Ca": "#E67E22", "La": "#D4A017", "Sr": "#7F8C8D", "Ba": "#5B8FB0"}
-RES = "/Users/anbu/Desktop/PIML/piml_ceramic/results"
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+RES = "./results"
+OUT_DIR = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 L = lambda p: json.load(open(os.path.join(RES, p)))
 

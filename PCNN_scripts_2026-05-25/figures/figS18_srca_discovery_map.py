@@ -27,10 +27,10 @@ import json
 import re
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT_DIR = "./figures_output/all_figures/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
 PIML    = "/Users/anbu/Desktop/PIML/piml_ceramic"
-EXTRACT = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data"
+EXTRACT = "./extracted_data"
 
 plt.rcParams.update({
     "font.family": "sans-serif",

@@ -103,7 +103,7 @@ plot_dual_axis(axes[1], folds, gs_r2, gs_mae_approx,
                mean_color=ORANGE,
                panel_title="b  Strat-GSS 5-fold CV (OOD)")
 
-OUT = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT = "./figures_output/all_figures/supp"
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}/figS4_cv_folds.{ext}", dpi=300)
 print("Saved figS4_cv_folds.pdf and .png")

@@ -122,7 +122,7 @@ ax.set_title(f"c  Parity plot, 90% band (±{q_hat_90:.1f})", loc="left")
 ax.legend(loc="upper left")
 
 # ── Save ──────────────────────────────────────────────────────────────────────
-OUT = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT = "./figures_output/all_figures/supp"
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}/figS7_conformal.{ext}", dpi=300)
 print(f"Saved figS7_conformal.pdf and .png  (q_hat_90 = {q_hat_90:.2f})")

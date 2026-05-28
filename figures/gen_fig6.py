@@ -43,7 +43,7 @@ def style4(ax, lw=1.0):
     ax.set_axisbelow(False)
 
 FIG_HALF = (3.5, 3.2)
-OUT_DIR  = "/Users/anbu/Desktop/NC figures/main"
+OUT_DIR  = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── Data ──────────────────────────────────────────────────────────────────────
