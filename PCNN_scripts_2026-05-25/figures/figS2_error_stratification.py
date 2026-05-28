@@ -43,8 +43,8 @@ OUR_COLOR = "#2874A6"; GRAY = "#B0BEC5"; RED = "#E74C3C"
 FIG_FULL  = (7.2, 3.8)
 
 # ── Load data ─────────────────────────────────────────────────────────────────
-PROC_DIR    = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed"
-LATENT_CSV  = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data/latent_space_trunk.csv"
+PROC_DIR    = "./data/processed"
+LATENT_CSV  = "./extracted_data/latent_space_trunk.csv"
 
 df        = pd.read_csv(f"{PROC_DIR}/test_holdout_predictions.csv")
 calib_idx = json.load(open(f"{PROC_DIR}/calibration_split_idx.json"))["calib_idx"]
@@ -136,7 +136,7 @@ ax.set_title("b  Prediction error by A-site cation", loc="left")
 ax.set_xlim(0, max(smape_b) * 1.55)   # bars anchored at zero (touch y-axis)
 
 # ── Save ──────────────────────────────────────────────────────────────────────
-OUT = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT = "./figures_output/all_figures/supp"
 for ext in ("pdf", "png"):
     fig.savefig(f"{OUT}/figS2_error_stratification.{ext}", dpi=300)
 print("Saved figS2_error_stratification.pdf and .png")

@@ -52,8 +52,8 @@ BRANCH_CM, BRANCH_LST, BRANCH_TILT, BRANCH_RES = "#264653", "#2A9D8F", "#E9C46A"
 # A-site palette
 ASITE = {"Pb": "#C0392B", "Ca": "#E67E22", "La": "#D4A017", "Sr": "#7F8C8D", "Ba": "#5B8FB0"}
 
-CSV = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data/decomposition_per_sample.csv"
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+CSV = "./extracted_data/decomposition_per_sample.csv"
+OUT_DIR = "./figures_output/all_figures/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Shannon 12-coordinate ionic radii (A; physical constants, not fitted)

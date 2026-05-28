@@ -22,10 +22,10 @@ import pandas as pd
 import sqlite3
 import json
 import os
-ROOT_DIR = '/Users/anbu/Desktop/NC figures/all_figures'
+ROOT_DIR = './figures_output'
 OUT_DIR = f'{ROOT_DIR}/supp'
 EXTRACT_DIR = f'{ROOT_DIR}/extracted_data'
-PIML = '/Users/anbu/Desktop/PIML/piml_ceramic'
+PIML = '.'
 plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'], 'font.size': 8, 'axes.titlesize': 9, 'axes.titleweight': 'bold', 'axes.labelsize': 8, 'xtick.labelsize': 7, 'ytick.labelsize': 7, 'legend.fontsize': 7, 'legend.frameon': True, 'legend.framealpha': 0.92, 'legend.edgecolor': '#CCCCCC', 'figure.constrained_layout.use': True, 'figure.dpi': 150, 'savefig.dpi': 300, 'axes.linewidth': 1.0, 'xtick.direction': 'in', 'ytick.direction': 'in', 'xtick.major.width': 0.8, 'ytick.major.width': 0.8, 'xtick.major.size': 3, 'ytick.major.size': 3, 'axes.grid': False})
 
 def style4(ax, lw=1.0):

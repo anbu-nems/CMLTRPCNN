@@ -11,7 +11,7 @@ from matplotlib.lines import Line2D
 import numpy as np
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT_DIR = "./figures_output/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 plt.rcParams.update({

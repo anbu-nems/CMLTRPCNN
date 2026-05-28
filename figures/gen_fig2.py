@@ -45,8 +45,8 @@ ORANGE    = "#E67E22"
 GRAY      = "#B0BEC5"
 FIG_FULL  = (7.2, 3.2)
 
-DATA_CSV = "/Users/anbu/Desktop/PIML/piml_ceramic/data/processed/test_holdout_predictions.csv"
-OUT_DIR  = "/Users/anbu/Desktop/NC figures/main"
+DATA_CSV = "./data/processed/test_holdout_predictions.csv"
+OUT_DIR  = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 df = pd.read_csv(DATA_CSV)

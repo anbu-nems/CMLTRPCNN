@@ -15,7 +15,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 import numpy as np
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+OUT_DIR = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ── Style ─────────────────────────────────────────────────────────────────────

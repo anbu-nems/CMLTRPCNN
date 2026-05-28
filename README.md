@@ -80,7 +80,7 @@ PCNN-release/
 │   └── cmltrv77_scalers.pkl        StandardScaler objects fit on train
 │
 ├── src/                            source code
-│   ├── model/model.py              CMLTRPCNNv71 PyTorch class
+│   ├── model/model.py              CMLTRPCNN PyTorch class
 │   ├── physics/                    physics modules
 │   │   ├── clausius_mossotti.py    CM baseline (Shannon)
 │   │   ├── tolerance_factor.py     Goldschmidt t

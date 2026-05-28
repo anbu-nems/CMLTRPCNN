@@ -34,8 +34,8 @@ def style4(ax, lw=0.8):
 
 REG = {"Ia": "#264653", "Ib": "#2A9D8F", "II": "#E9C46A", "III": "#E76F51"}
 GRAY = "#B0BEC5"
-CSV = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data/decomposition_per_sample.csv"
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+CSV = "./extracted_data/decomposition_per_sample.csv"
+OUT_DIR = "./figures_output/all_figures/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 df = pd.read_csv(CSV)

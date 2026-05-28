@@ -35,9 +35,9 @@ def style4(ax, lw=0.8):
 
 CM, LST, TILT, OUR = "#264653", "#2A9D8F", "#E9C46A", "#2874A6"
 RED, ORANGE, GRAY = "#C0392B", "#E67E22", "#B0BEC5"
-RES = "/Users/anbu/Desktop/PIML/piml_ceramic/results"
-F03F = "/Users/anbu/Desktop/NC figures/Manuscript figures 1/findings_csvs/F03F_counterfactual_LST_routing.csv"
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/main"
+RES = "./results"
+F03F = "./figures_output/Manuscript figures 1/findings_csvs/F03F_counterfactual_LST_routing.csv"
+OUT_DIR = "./figures_output/main"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 tp = json.load(open(f"{RES}/40_tilt_proof.json"))

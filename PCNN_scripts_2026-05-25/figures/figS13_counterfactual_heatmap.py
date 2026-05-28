@@ -19,8 +19,8 @@ import numpy as np
 import pandas as pd
 import json, os, re
 PIML = '/Users/anbu/Desktop/PIML/piml_ceramic'
-OUT = '/Users/anbu/Desktop/NC figures/all_figures/supp'
-EXTRACT = '/Users/anbu/Desktop/NC figures/all_figures/extracted_data'
+OUT = './figures_output/all_figures/supp'
+EXTRACT = './extracted_data'
 os.makedirs(OUT, exist_ok=True)
 plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'], 'font.size': 8, 'axes.titlesize': 9, 'axes.titleweight': 'bold', 'axes.labelsize': 8, 'xtick.labelsize': 7, 'ytick.labelsize': 7, 'legend.fontsize': 7, 'legend.frameon': True, 'legend.framealpha': 0.92, 'legend.edgecolor': '#CCCCCC', 'figure.dpi': 150, 'savefig.dpi': 300, 'axes.linewidth': 0.9, 'xtick.direction': 'in', 'ytick.direction': 'in', 'xtick.major.width': 0.8, 'ytick.major.width': 0.8, 'xtick.major.size': 3, 'ytick.major.size': 3, 'axes.grid': False})
 

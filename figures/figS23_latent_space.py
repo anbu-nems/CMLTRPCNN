@@ -23,9 +23,9 @@ import pandas as pd
 import json
 import os
 
-OUT_DIR = "/Users/anbu/Desktop/NC figures/all_figures/supp"
+OUT_DIR = "./figures_output/supp"
 os.makedirs(OUT_DIR, exist_ok=True)
-EXTRACT = "/Users/anbu/Desktop/NC figures/all_figures/extracted_data"
+EXTRACT = "./extracted_data"
 
 plt.rcParams.update({
     "font.family": "sans-serif",

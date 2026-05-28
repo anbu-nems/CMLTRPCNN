@@ -3,7 +3,7 @@
 """
 Additional PCNN figures generated from results JSONs.
 
-Outputs to /Users/anbu/Desktop/NC figures/all_figures/:
+Outputs to ./figures_output/:
   fig_decomposition.pdf       — εr decomposition (CM 49.3 / LST 51.0 / Tilt -1.5 / Res 0.6)
   fig_asite_hierarchy.pdf     — A-site f_LST hierarchy + literature validation (Spearman=1.000)
   fig_law_ablation.pdf        — 2^3 factorial ablation of physics laws I/II/III
@@ -17,8 +17,8 @@ import matplotlib.patches as mpatches
 import numpy as np
 import json
 import os
-RESULTS_DIR = '/Users/anbu/Desktop/PIML/piml_ceramic/results'
-OUT_DIR = '/Users/anbu/Desktop/NC figures/all_figures/supp'
+RESULTS_DIR = './results'
+OUT_DIR = './figures_output/supp'
 os.makedirs(OUT_DIR, exist_ok=True)
 plt.rcParams.update({'font.family': 'sans-serif', 'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'], 'font.size': 8, 'axes.titlesize': 9, 'axes.titleweight': 'bold', 'axes.labelsize': 8, 'xtick.labelsize': 7, 'ytick.labelsize': 7, 'legend.fontsize': 7, 'legend.frameon': True, 'legend.framealpha': 0.92, 'legend.edgecolor': '#CCCCCC', 'figure.constrained_layout.use': True, 'figure.dpi': 150, 'savefig.dpi': 300, 'axes.linewidth': 1.0, 'xtick.direction': 'in', 'ytick.direction': 'in', 'xtick.major.width': 0.8, 'ytick.major.width': 0.8, 'xtick.major.size': 3, 'ytick.major.size': 3, 'axes.grid': False})
 

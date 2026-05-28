@@ -1,6 +1,6 @@
 # Manuscript — submission deliverables
 
-Snapshot of the Nature Communications submission for the PCNN (CMLTRPCNNv7.7) ABO₃
+Snapshot of the submission of the CMLTRPCNN manuscript ABO₃
 microwave-dielectric study. Copied 2026-05-26 from the build directory; **byte-identical**
 to the rendered sources at the time of copy.
 
@@ -11,7 +11,7 @@ to the rendered sources at the time of copy.
 | `captions.md` | Source for all main + supplementary figure captions |
 | `references.json` | Citation source of truth (author / journal / volume / pages / year), used to number citations |
 
-Target: **Nature Communications**, *Physics-Informed Machine Learning* Collection (deadline 31 May 2026).
+Manuscript in preparation / submitted; journal information to be added on acceptance.
 
 ## Reproducing the `.docx`
 These are a **snapshot**, not a live link. They are rebuilt in `piml_ceramic/manuscript_build/`:
