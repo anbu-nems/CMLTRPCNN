@@ -3,7 +3,7 @@ message: "If you use this code, please cite both the manuscript and this softwar
 type: software
 title: "CMLTRPCNN — physics-constrained neural network for ABO3 microwave-dielectric permittivity prediction"
 abstract: "Physics-constrained neural network that decomposes ABO3 microwave-dielectric permittivity into Clausius-Mossotti, Lyddane-Sachs-Teller, octahedral-tilt and confidence-gated residual contributions. Includes the trained 5-seed ensemble, training pipeline, conformal calibration, applicability-domain analysis, virtual screening, and physics-constrained genetic-algorithm inverse design."
-version: "1.1.1"
+version: "1.1.0"
 date-released: "2026-05-29"
 license: MIT
 repository-code: "https://github.com/anbu-nems/CMLTRPCNN"
