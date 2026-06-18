@@ -3,8 +3,8 @@ message: "If you use this code, please cite both the manuscript and this softwar
 type: software
 title: "CMLTRPCNN — physics-constrained neural network for ABO3 microwave-dielectric permittivity prediction"
 abstract: "Physics-constrained neural network that decomposes ABO3 microwave-dielectric permittivity into Clausius-Mossotti, Lyddane-Sachs-Teller, octahedral-tilt and confidence-gated residual contributions. Includes the trained 5-seed ensemble, training pipeline, conformal calibration, applicability-domain analysis, virtual screening, and physics-constrained genetic-algorithm inverse design."
-version: "1.1.0"
-date-released: "2026-05-29"
+version: "1.1.1"
+date-released: "2026-06-18"
 license: MIT
 repository-code: "https://github.com/anbu-nems/CMLTRPCNN"
 url: "https://github.com/anbu-nems/CMLTRPCNN"
@@ -12,8 +12,8 @@ authors:
   - name: "PCNN Authors"
 preferred-citation:
   type: generic
-  title: "Physics-constrained decomposition identifies an A-site chemistry hierarchy associated with model-attributed soft-mode amplification in ABO3 microwave permittivity"
-  notes: "Manuscript under preparation / submitted; journal information to be added on acceptance."
+  title: "A physics-constrained neural network for mechanism-resolved interpretability and band-targeted inverse design of ABO3 dielectric ceramics - application to 5G/6G resonator hardware"
+  notes: "Manuscript submitted to InfoMat (Wiley) on 2026-06-18. Journal information and DOI will be added on acceptance. This v1.1.1 software release accompanies that submission; the code, dataset, and scientific results are unchanged from v1.1.0 (the v1.1.1 tag exists only to record the submission date)."
   year: 2026
   authors:
     - name: "PCNN Authors"
