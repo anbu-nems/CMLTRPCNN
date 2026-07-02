@@ -1,0 +1,98 @@
+{
+  "experiment": "OOD distribution-shift test via LST feature scaling",
+  "design": "Identical architecture trained two ways: (A) Softplus/-Softplus sign bound; (B) linear output + \u03bb_sign=10 soft penalty. Holdout features perturbed by scaling LST-block by {1.0, 1.5, 2.0, 3.0, 5.0}\u00d7. Counts sign violations per OOD level.",
+  "n_holdout": 116,
+  "n_lst_feats_scaled": 30,
+  "scales": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "architectural": [
+    {
+      "scale": 1.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": 0.950158417224884,
+      "mae_at_1x": 5.232483386993408,
+      "n": 116
+    },
+    {
+      "scale": 1.5,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 2.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 3.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 5.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    }
+  ],
+  "loss_penalty": [
+    {
+      "scale": 1.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": 0.9462851285934448,
+      "mae_at_1x": 5.381847858428955,
+      "n": 116
+    },
+    {
+      "scale": 1.5,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 2.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 3.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    },
+    {
+      "scale": 5.0,
+      "lst_violations": 0,
+      "tilt_violations": 0,
+      "r2_at_1x": null,
+      "mae_at_1x": null,
+      "n": 116
+    }
+  ],
+  "lambda_sign_loss_penalty": 10.0
+}

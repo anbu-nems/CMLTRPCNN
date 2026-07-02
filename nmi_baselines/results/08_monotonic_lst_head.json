@@ -1,0 +1,51 @@
+{
+  "model": "PCNN_MonotonicLST",
+  "description": "PCNN with architectural monotonicity in the LST branch over soft-mode-driver inputs",
+  "architecture": {
+    "lst_head": "free MLP(trunk + b_o_reduced_mass) + positive-weight aggregation(soft_mode_activity, lst_enhancement_proxy) + ib_bonus \u00d7 is_ib, all summed pre-Softplus",
+    "monotone_features": [
+      "soft_mode_activity",
+      "lst_enhancement_proxy",
+      "d0_B_polarizable_A"
+    ],
+    "free_features": [
+      "b_o_reduced_mass"
+    ],
+    "guarantees": [
+      "\u03b4_LST \u2265 0 (Softplus output)",
+      "\u03b4_LST monotone non-decreasing in soft_mode_activity (positive weight \u00d7 softplus envelope)",
+      "\u03b4_LST monotone non-decreasing in lst_enhancement_proxy (positive weight \u00d7 softplus envelope)",
+      "\u03b4_LST monotone non-decreasing in d\u2070_B_polarizable_A (positive softplus bonus)"
+    ]
+  },
+  "strat_gss_r2_mean": 0.8675,
+  "strat_gss_r2_std": 0.1519,
+  "strat_gss_r2_per_fold": [
+    0.9214,
+    0.5669,
+    0.971,
+    0.9626,
+    0.9158
+  ],
+  "holdout_r2": 0.9453,
+  "holdout_mae": 5.485,
+  "holdout_lst_violations": 0,
+  "n_holdout": 116,
+  "monotonicity_verification": {
+    "soft_mode_activity": {
+      "monotonicity_rate": 1.0,
+      "mean_delta_lst_change": 0.3622
+    },
+    "lst_enhancement_proxy": {
+      "monotonicity_rate": 1.0,
+      "mean_delta_lst_change": 0.3702
+    }
+  },
+  "training_time_seconds": 40.7,
+  "pcnn_reference": {
+    "strat_gss_r2": "0.893 \u00b1 0.044",
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "note": "canonical PCNN has sign-bound but NO monotonicity guarantee"
+  }
+}

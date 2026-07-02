@@ -1,0 +1,54 @@
+{
+  "GAM": {
+    "strat_gss_r2_mean": 0.8887,
+    "strat_gss_r2_std": 0.0539,
+    "strat_gss_r2_per_fold": [
+      0.8619,
+      0.803,
+      0.9402,
+      0.9505,
+      0.8879
+    ],
+    "holdout_r2": 0.8534,
+    "holdout_mae": 9.503,
+    "training_time_s": 42.8,
+    "description": "Generalized Additive Model (pyGAM): one cubic spline per feature, additive"
+  },
+  "EBM": {
+    "strat_gss_r2_mean": 0.9351,
+    "strat_gss_r2_std": 0.0307,
+    "strat_gss_r2_per_fold": [
+      0.9181,
+      0.9428,
+      0.9474,
+      0.9796,
+      0.8878
+    ],
+    "holdout_r2": 0.9139,
+    "holdout_mae": 7.392,
+    "training_time_s": 1439.2,
+    "description": "Explainable Boosting Machine (interpret-ml): cyclic gradient-boosted shape functions, additive"
+  },
+  "PMN": {
+    "strat_gss_r2_mean": 0.7315,
+    "strat_gss_r2_std": 0.1013,
+    "strat_gss_r2_per_fold": [
+      0.6562,
+      0.6493,
+      0.9021,
+      0.6556,
+      0.7945
+    ],
+    "holdout_r2": 0.894,
+    "holdout_mae": 7.626,
+    "training_time_s": 17.7,
+    "description": "Partial-Monotone NN: positive-weight LST + tilt heads + free residual MLP head; monotonicity by construction"
+  },
+  "PCNN_reference": {
+    "strat_gss_r2_mean": 0.893,
+    "strat_gss_r2_std": 0.044,
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "description": "Architecture-level physics-constrained NN with 4-branch decomposition (paper canonical)"
+  }
+}

@@ -89,3 +89,13 @@ the published LOFO numbers:
 | Regime III | 559 | 0.4901 |  0.4901 |
 
 All numbers reproduce bit-perfect — script and data are frozen.
+
+## v1.2.0 additions (NMI submission)
+
+| Path | Files | Purpose |
+|------|-------|---------|
+| `nmi_baselines/scripts/` | 15 | Interpretable-ML baselines (GAM/EBM/PMN), soft-penalty PINN + λ sweep, Reaney-regime OOD sign tests, per-subclass attribution, architectural variants (Mono/Quant/Laplace), figure generation |
+| `nmi_baselines/results/` | 9 | Result JSONs for all above experiments |
+| `nmi_baselines/figures/` | 14 | Supplementary figures S25-S30 (PNG + PDF) |
+
+See `nmi_baselines/README.md` for the supplementary-item → script → result reproduction map.

@@ -1,0 +1,188 @@
+{
+  "experiment_A_reaney_lofo": {
+    "description": "Leave-one-Reaney-regime-out: train on 3 regimes, test on the held-out 4th regime",
+    "results": [
+      {
+        "held_out_regime": "Ia",
+        "n_train": 1128,
+        "n_test": 60,
+        "r2": 0.5353,
+        "mae": 3.903,
+        "lst_violations": 0,
+        "tilt_violations": 0,
+        "time_s": 8.8
+      },
+      {
+        "held_out_regime": "Ib",
+        "n_train": 846,
+        "n_test": 354,
+        "r2": 0.35,
+        "mae": 11.204,
+        "lst_violations": 0,
+        "tilt_violations": 0,
+        "time_s": 6.5
+      },
+      {
+        "held_out_regime": "II",
+        "n_train": 887,
+        "n_test": 331,
+        "r2": 0.7707,
+        "mae": 7.867,
+        "lst_violations": 0,
+        "tilt_violations": 0,
+        "time_s": 6.4
+      },
+      {
+        "held_out_regime": "III",
+        "n_train": 703,
+        "n_test": 559,
+        "r2": 0.6449,
+        "mae": 11.232,
+        "lst_violations": 0,
+        "tilt_violations": 0,
+        "time_s": 4.9
+      }
+    ]
+  },
+  "experiment_B_subclass_attribution": {
+    "description": "Per-subclass mean per-branch attribution from PCNN-equivalent trained on full training set",
+    "by_regime": [
+      {
+        "label": "regime_Ia",
+        "n": 60,
+        "y_mean": 25.41,
+        "pred_mean": 25.31,
+        "er_CM_mean": 14.23,
+        "delta_LST_mean": 0.63,
+        "delta_tilt_mean": -0.68,
+        "delta_res_mean": 11.13,
+        "f_LST": 0.044
+      },
+      {
+        "label": "regime_Ib",
+        "n": 354,
+        "y_mean": 36.82,
+        "pred_mean": 36.41,
+        "er_CM_mean": 19.44,
+        "delta_LST_mean": 3.34,
+        "delta_tilt_mean": -0.61,
+        "delta_res_mean": 14.23,
+        "f_LST": 0.172
+      },
+      {
+        "label": "regime_II",
+        "n": 331,
+        "y_mean": 54.07,
+        "pred_mean": 54.49,
+        "er_CM_mean": 21.34,
+        "delta_LST_mean": 5.7,
+        "delta_tilt_mean": -0.4,
+        "delta_res_mean": 27.86,
+        "f_LST": 0.267
+      },
+      {
+        "label": "regime_III",
+        "n": 559,
+        "y_mean": 48.12,
+        "pred_mean": 47.72,
+        "er_CM_mean": 15.96,
+        "delta_LST_mean": 5.12,
+        "delta_tilt_mean": -0.42,
+        "delta_res_mean": 27.06,
+        "f_LST": 0.321
+      }
+    ],
+    "by_asite": [
+      {
+        "label": "asite_Ba",
+        "n": 436,
+        "y_mean": 34.29,
+        "pred_mean": 33.87,
+        "er_CM_mean": 17.89,
+        "delta_LST_mean": 2.11,
+        "delta_tilt_mean": -0.58,
+        "delta_res_mean": 14.45,
+        "f_LST": 0.118
+      },
+      {
+        "label": "asite_Ca",
+        "n": 421,
+        "y_mean": 53.54,
+        "pred_mean": 53.13,
+        "er_CM_mean": 16.94,
+        "delta_LST_mean": 6.09,
+        "delta_tilt_mean": -0.39,
+        "delta_res_mean": 30.48,
+        "f_LST": 0.359
+      },
+      {
+        "label": "asite_Sr",
+        "n": 180,
+        "y_mean": 38.89,
+        "pred_mean": 39.5,
+        "er_CM_mean": 17.36,
+        "delta_LST_mean": 3.77,
+        "delta_tilt_mean": -0.51,
+        "delta_res_mean": 18.87,
+        "f_LST": 0.217
+      },
+      {
+        "label": "asite_La",
+        "n": 125,
+        "y_mean": 42.75,
+        "pred_mean": 42.66,
+        "er_CM_mean": 19.72,
+        "delta_LST_mean": 3.16,
+        "delta_tilt_mean": -0.54,
+        "delta_res_mean": 20.31,
+        "f_LST": 0.16
+      },
+      {
+        "label": "asite_Pb",
+        "n": 86,
+        "y_mean": 91.09,
+        "pred_mean": 91.81,
+        "er_CM_mean": 27.22,
+        "delta_LST_mean": 15.21,
+        "delta_tilt_mean": -0.15,
+        "delta_res_mean": 49.53,
+        "f_LST": 0.559
+      },
+      {
+        "label": "asite_Nd",
+        "n": 22,
+        "y_mean": 25.14,
+        "pred_mean": 23.97,
+        "er_CM_mean": 15.31,
+        "delta_LST_mean": 0.87,
+        "delta_tilt_mean": -0.71,
+        "delta_res_mean": 8.51,
+        "f_LST": 0.057
+      },
+      {
+        "label": "asite_Sm",
+        "n": 10,
+        "y_mean": 32.07,
+        "pred_mean": 31.1,
+        "er_CM_mean": 21.17,
+        "delta_LST_mean": 1.39,
+        "delta_tilt_mean": -0.7,
+        "delta_res_mean": 9.24,
+        "f_LST": 0.066
+      },
+      {
+        "label": "asite_Li",
+        "n": 10,
+        "y_mean": 34.44,
+        "pred_mean": 34.39,
+        "er_CM_mean": 8.13,
+        "delta_LST_mean": 2.33,
+        "delta_tilt_mean": -0.39,
+        "delta_res_mean": 24.32,
+        "f_LST": 0.287
+      }
+    ]
+  },
+  "model": "PINN_Arch (PCNN-equivalent, identical to script 03 model A)",
+  "n_total": 1304
+}
