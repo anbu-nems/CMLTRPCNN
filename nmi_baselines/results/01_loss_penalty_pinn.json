@@ -1,0 +1,83 @@
+{
+  "model": "LossPenaltyPINN",
+  "description": "Same architecture as PCNN but sign constraints as soft loss penalty (no Softplus / -Softplus output activations)",
+  "hyperparameters": {
+    "hidden": 128,
+    "n_layers": 4,
+    "lr": 0.00074,
+    "batch_size": 256,
+    "epochs": 300,
+    "lambda_sign": 1.0,
+    "lambda_cap": 0.324,
+    "residual_scale": 80.0
+  },
+  "strat_gss_r2_mean": 0.8723,
+  "strat_gss_r2_std": 0.1028,
+  "strat_gss_r2_per_fold": [
+    0.8662,
+    0.6832,
+    0.9665,
+    0.9618,
+    0.8837
+  ],
+  "holdout_r2": 0.9494,
+  "holdout_mae": 5.302,
+  "sign_violations_holdout": {
+    "n_total": 116,
+    "n_lst_violations": 4,
+    "n_tilt_violations": 1,
+    "lst_violation_rate": 0.0345,
+    "tilt_violation_rate": 0.0086
+  },
+  "sign_violations_per_fold": [
+    {
+      "fold": 0,
+      "n_total": 34,
+      "n_lst_violations": 0,
+      "n_tilt_violations": 0,
+      "lst_violation_rate": 0.0,
+      "tilt_violation_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "n_total": 34,
+      "n_lst_violations": 0,
+      "n_tilt_violations": 0,
+      "lst_violation_rate": 0.0,
+      "tilt_violation_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "n_total": 34,
+      "n_lst_violations": 0,
+      "n_tilt_violations": 0,
+      "lst_violation_rate": 0.0,
+      "tilt_violation_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "n_total": 34,
+      "n_lst_violations": 0,
+      "n_tilt_violations": 0,
+      "lst_violation_rate": 0.0,
+      "tilt_violation_rate": 0.0
+    },
+    {
+      "fold": 4,
+      "n_total": 34,
+      "n_lst_violations": 0,
+      "n_tilt_violations": 1,
+      "lst_violation_rate": 0.0,
+      "tilt_violation_rate": 0.0294
+    }
+  ],
+  "training_time_seconds": 45.9,
+  "comparison_target_pcnn": {
+    "strat_gss_r2": "0.893 \u00b1 0.044",
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "lst_violation_rate": 0.0,
+    "tilt_violation_rate": 0.0,
+    "note": "PCNN enforces sign constraints architecturally \u2192 0% violations guaranteed"
+  }
+}

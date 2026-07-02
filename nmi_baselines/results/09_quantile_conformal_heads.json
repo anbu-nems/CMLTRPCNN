@@ -1,0 +1,31 @@
+{
+  "model": "PCNN_QuantileHeads",
+  "description": "Intrinsic quantile-regression heads (5%, 50%, 95%) trained via pinball loss; replaces post-hoc conformal calibration",
+  "architecture": "Canonical PCNN + non-crossing-parameterised quantile-offset heads (q05 = q50 - softplus, q95 = q50 + softplus)",
+  "strat_gss_r2_mean": 0.8712,
+  "strat_gss_r2_std": 0.1277,
+  "strat_gss_r2_per_fold": [
+    0.8977,
+    0.6232,
+    0.9695,
+    0.9654,
+    0.9001
+  ],
+  "strat_gss_coverage_mean": 0.7412,
+  "strat_gss_pi_width_mean": 10.315,
+  "holdout_r2": 0.9466,
+  "holdout_mae": 5.384,
+  "holdout_90pct_coverage": 0.5776,
+  "holdout_pi_width_mean": 9.739,
+  "holdout_lst_violations": 0,
+  "n_holdout": 116,
+  "training_time_seconds": 55.7,
+  "pcnn_post_hoc_conformal_reference": {
+    "strat_gss_r2": "0.893 \u00b1 0.044",
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "holdout_90pct_coverage": 0.905,
+    "pi_width_2qhat90": 28.76,
+    "note": "Canonical PCNN with post-hoc conformal calibration (q\u0302\u2089\u2080 = 14.38)"
+  }
+}

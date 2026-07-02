@@ -1,0 +1,24 @@
+{
+  "model": "PCNN_LastLayerLaplace",
+  "description": "Canonical PCNN with last-layer Laplace approximation (Daxberger et al. 2021) for Bayesian per-prediction uncertainty",
+  "architecture": "Identical canonical PCNN; final linear layer replaced by Gaussian posterior at inference",
+  "holdout_r2_pre_laplace": 0.954,
+  "holdout_mae_pre_laplace": 4.948,
+  "holdout_r2_post_laplace": 0.954,
+  "holdout_mae_post_laplace": 4.948,
+  "holdout_bayesian_90pct_coverage": 0.8798,
+  "holdout_bayesian_pi_width": 20.929,
+  "holdout_predictive_std_mean": 6.362,
+  "holdout_log_predictive_lik_mean": -3.517,
+  "laplace_prior_precision": 52.6595,
+  "laplace_sigma_noise": 1.0,
+  "n_holdout": 116,
+  "training_time_seconds": 6.3,
+  "pcnn_post_hoc_conformal_reference": {
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "holdout_90pct_coverage": 0.905,
+    "pi_width_2qhat90": 28.76,
+    "note": "Canonical PCNN with post-hoc conformal calibration (q\u0302\u2089\u2080 = 14.38)"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "model": "LossPenaltyPINN_lambda_sweep",
+  "description": "\u03bb_sign sensitivity sweep \u2014 robustness of the 'architecture > loss-penalty' finding",
+  "lambdas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "results": [
+    {
+      "lambda_sign": 0.1,
+      "strat_gss_r2_mean": 0.8719,
+      "strat_gss_r2_std": 0.1107,
+      "strat_gss_r2_per_fold": [
+        0.8661,
+        0.6624,
+        0.966,
+        0.9564,
+        0.9084
+      ],
+      "holdout_r2": 0.9503,
+      "holdout_mae": 5.255,
+      "ho_lst_violations": 18,
+      "ho_tilt_violations": 12,
+      "ho_lst_violation_rate": 0.1552,
+      "ho_tilt_violation_rate": 0.1034,
+      "fold_lst_violations": [
+        0,
+        1,
+        4,
+        3,
+        3
+      ],
+      "fold_tilt_violations": [
+        0,
+        0,
+        6,
+        3,
+        3
+      ],
+      "training_time_seconds": 42.0
+    },
+    {
+      "lambda_sign": 1.0,
+      "strat_gss_r2_mean": 0.8723,
+      "strat_gss_r2_std": 0.1028,
+      "strat_gss_r2_per_fold": [
+        0.8662,
+        0.6832,
+        0.9665,
+        0.9618,
+        0.8837
+      ],
+      "holdout_r2": 0.9494,
+      "holdout_mae": 5.302,
+      "ho_lst_violations": 4,
+      "ho_tilt_violations": 1,
+      "ho_lst_violation_rate": 0.0345,
+      "ho_tilt_violation_rate": 0.0086,
+      "fold_lst_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold_tilt_violations": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "training_time_seconds": 41.8
+    },
+    {
+      "lambda_sign": 10.0,
+      "strat_gss_r2_mean": 0.8669,
+      "strat_gss_r2_std": 0.1093,
+      "strat_gss_r2_per_fold": [
+        0.8636,
+        0.6662,
+        0.9679,
+        0.9629,
+        0.8739
+      ],
+      "holdout_r2": 0.9463,
+      "holdout_mae": 5.382,
+      "ho_lst_violations": 0,
+      "ho_tilt_violations": 0,
+      "ho_lst_violation_rate": 0.0,
+      "ho_tilt_violation_rate": 0.0,
+      "fold_lst_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold_tilt_violations": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "training_time_seconds": 41.9
+    },
+    {
+      "lambda_sign": 100.0,
+      "strat_gss_r2_mean": 0.8622,
+      "strat_gss_r2_std": 0.1139,
+      "strat_gss_r2_per_fold": [
+        0.8553,
+        0.653,
+        0.9648,
+        0.9643,
+        0.8737
+      ],
+      "holdout_r2": 0.9448,
+      "holdout_mae": 5.47,
+      "ho_lst_violations": 0,
+      "ho_tilt_violations": 0,
+      "ho_lst_violation_rate": 0.0,
+      "ho_tilt_violation_rate": 0.0,
+      "fold_lst_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold_tilt_violations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "training_time_seconds": 42.2
+    }
+  ],
+  "pcnn_reference": {
+    "strat_gss_r2": "0.893 \u00b1 0.044",
+    "holdout_r2": 0.941,
+    "holdout_mae": 5.77,
+    "ho_lst_violation_rate": 0.0,
+    "ho_tilt_violation_rate": 0.0,
+    "note": "architectural sign bounds (Softplus / -Softplus) \u2192 0% violations by construction"
+  }
+}
